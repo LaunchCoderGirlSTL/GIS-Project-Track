@@ -5,5 +5,18 @@ This curriculum introduces CoderGirl learners with a basic programming skill set
 
 After an introduction to JavaScript, it introduces the `OpenLayers <https://openlayers.org/>`_ GIS JavaScript framework. It then explores using `GeoServer <http://geoserver.org/>`_ to create and customize GIS data stores.
 
+Lessons
+-------
+
 .. toctree::
    :maxdepth: 2
+
+   lessons/intro-to-javascript
+
+Appendices
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   appendices/command-line
