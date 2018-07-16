@@ -6,12 +6,12 @@ from recommonmark.transform import AutoStructify
 # Customize for the specific site. Any options in the html_theme_options
 # dictionary below may be overriden here
 site_theme_options = {
-    'navbar_title': 'Curriculum Docs',
+    'navbar_title': 'GIS Project Track',
     'navbar_site_name': "Pages",
-    'bootswatch_theme': 'launchcode',
+    'bootswatch_theme': 'codergirl',
 }
 
-project = 'LaunchCode Curriculum Docs'
+project = 'CoderGirl GIS Project Track'
 
 # -- Project information -----------------------------------------------------
 
