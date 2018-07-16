@@ -54,7 +54,12 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to JavaScript</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to JavaScript</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#html-and-css">HTML and CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#javascript">JavaScript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#practice">Practice</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
@@ -92,7 +97,17 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Introduction to JavaScript</a></li>
+<li><a class="reference internal" href="#">Introduction to JavaScript</a><ul>
+<li><a class="reference internal" href="#html-and-css">HTML and CSS</a></li>
+<li><a class="reference internal" href="#javascript">JavaScript</a></li>
+<li><a class="reference internal" href="#practice">Practice</a><ul>
+<li><a class="reference internal" href="#javascript-practice">JavaScript Practice</a></li>
+<li><a class="reference internal" href="#explore-the-gis-wiki">Explore the GIS Wiki</a></li>
+<li><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -101,6 +116,106 @@
       
   <div class="section" id="introduction-to-javascript">
 <h1>Introduction to JavaScript<a class="headerlink" href="#introduction-to-javascript" title="Permalink to this headline">¶</a></h1>
+<p>During the first course, we will get to know each other and get an overview of the GIS learning module. The goal of this course is to teach you the skills necessary to build an interactive, map-based web project.</p>
+<p>We will also discuss the basic components of web programming, including HTML, CSS, and JavaScript.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some of you may have exposure to some of these concepts already from your learning track. That’s okay! Use this and the next two courses as a chance to review what you learned there, and to help your fellow GIS course learners. If you want to learn some more advanced web concepts, talk to a mentor and they can point you in the right direction.</p>
+</div>
+<div class="section" id="html-and-css">
+<h2>HTML and CSS<a class="headerlink" href="#html-and-css" title="Permalink to this headline">¶</a></h2>
+<p>We’ll only briefly discuss HTML and CSS in class. If the topics are new to you, or you just want a review, complete the following lessons on Codecademy (you’ll need to create a free account).</p>
+<p><a class="reference external" href="https://www.codecademy.com/learn/learn-html">Learn HTML</a></p>
+<ul class="simple">
+<li>1.1 - Introduction to HTML</li>
+<li>1.2 - HTML Document Standards</li>
+</ul>
+<p><a class="reference external" href="https://www.codecademy.com/learn/learn-css">Learn CSS</a></p>
+<ul class="simple">
+<li>1.1 - CSS Setup and Selectors</li>
+<li>1.2 - CSS Visual Rules</li>
+<li>3.1 - Display and Positioning</li>
+</ul>
+<p>The concepts that you should be familiar with are:</p>
+<p><strong>CSS</strong></p>
+<ul class="simple">
+<li>selectors: element/tag, ID, class, compound and nested</li>
+<li>Block vs. inline</li>
+<li>Positioning</li>
+<li><code class="docutils literal notranslate"><span class="pre">z-index</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">float</span></code> and <code class="docutils literal notranslate"><span class="pre">clear</span></code></li>
+<li>Where CSS rules can be defined (inline, <code class="docutils literal notranslate"><span class="pre">&lt;style&gt;</span></code> block, external file)</li>
+<li>Common visual rules: <code class="docutils literal notranslate"><span class="pre">color</span></code>, <code class="docutils literal notranslate"><span class="pre">font</span></code>, <code class="docutils literal notranslate"><span class="pre">opacity</span></code>, <code class="docutils literal notranslate"><span class="pre">background</span></code>, etc</li>
+</ul>
+<p><strong>HTML</strong></p>
+<ul class="simple">
+<li>Elements<ul>
+<li>Headings (<code class="docutils literal notranslate"><span class="pre">h1</span></code>, <code class="docutils literal notranslate"><span class="pre">h2</span></code>, etc)</li>
+<li><code class="docutils literal notranslate"><span class="pre">div</span></code>, <code class="docutils literal notranslate"><span class="pre">span</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">p</span></code></li>
+<li>Lists (<code class="docutils literal notranslate"><span class="pre">ul</span></code>, <code class="docutils literal notranslate"><span class="pre">ol</span></code>)</li>
+<li><code class="docutils literal notranslate"><span class="pre">img</span></code></li>
+<li>links</li>
+</ul>
+</li>
+<li>attributes</li>
+<li>Basic document structure. That is, where these should tags go within an HTML file: <code class="docutils literal notranslate"><span class="pre">doctype</span></code>, <code class="docutils literal notranslate"><span class="pre">html</span></code>, <code class="docutils literal notranslate"><span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">body</span></code>, <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">link</span></code></li>
+</ul>
+</div>
+<div class="section" id="javascript">
+<h2>JavaScript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h2>
+<p>In class we will learn the basics of JavaScript (JS) as a programming language. JS is most frequently used within web pages to make them dynamic, running within a user’s web browser. However, if you dive straight into JS in the browser then it can be hard to learn the difference between those commands and features that are core to JS and those that are part of the additional functionality made available in the browser environment.</p>
+<p>For this lesson, we want to focus on the universal aspects of JS. That is, JS as a <em>language</em>.</p>
+<p>We’ll cover:</p>
+<ul class="simple">
+<li>Data types and variables</li>
+<li>Flow control (loops and conditionals)</li>
+<li>Functions</li>
+<li>Anonymous functions, functions as variables and parameters</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">JS is a “C-style” language, like Java and C#. If you already know one of those languages then some aspects of the syntax of JS will be the same, or very similar.</p>
+</div>
+</div>
+<div class="section" id="practice">
+<h2>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h2>
+<p>Before next class, complete each of the following activities.</p>
+<div class="section" id="javascript-practice">
+<h3>JavaScript Practice<a class="headerlink" href="#javascript-practice" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When we refer to the “terminal” in this and future lessons, you should use the Terminal app if you’re using a Mac, or the Command Prompt (<code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code>) if you’re using Windows. If you haven’t used a terminal (or command prompt) before, or just want a refresher, see <a class="reference internal" href="../appendices/command-line.html#app-command-line"><span class="std std-ref">Appendix: The Command Line</span></a>.</p>
+</div>
+<ol class="arabic simple">
+<li>Install <a class="reference external" href="https://nodejs.org/en/">Node</a>.</li>
+<li>In a terminal, run <code class="docutils literal notranslate"><span class="pre">node</span></code> to ensure the install worked. Type <code class="docutils literal notranslate"><span class="pre">.exit</span></code> to quit the Node prompt.</li>
+<li>Install the JavaScripting workshopper from <a class="reference external" href="https://nodeschool.io/#workshopper-list">nodeschool.io</a> by running the given npm command.</li>
+<li>In the terminal, run <code class="docutils literal notranslate"><span class="pre">javascripting</span></code> to start the tutorial. All lesson and exercise content is given to you on the screen. If something doesn’t work, first re-read the instructions, paying special attention to the details, and then ask for help. Be sure to complete all of the JavaScript exercises.</li>
+</ol>
+</div>
+<div class="section" id="explore-the-gis-wiki">
+<h3>Explore the GIS Wiki<a class="headerlink" href="#explore-the-gis-wiki" title="Permalink to this headline">¶</a></h3>
+<p>Visit <a class="reference external" href="http://wiki.gis.com/wiki/index.php/Main_Page">wiki.gis.com</a> and bookmark the site. This site will be a great guide for you as you get used to new technologies and terminology.</p>
+<ol class="arabic simple">
+<li>Visit wiki.gis.com and read the “New to GIS?” page.</li>
+<li>Read the first linked article, <a class="reference external" href="http://wiki.gis.com/wiki/index.php/Geographic_information_system">GIS</a>, through the intro to section 3.1.2 (you don’t need to read the subsections of 3.1.2).</li>
+<li>Explore the wiki and write down the answers to the following questions/prompts:<ul>
+<li>Name two applications of GIS in different fields (e.g. agriculture and government)</li>
+<li>What are 3 ways that GIS data may be collected?</li>
+<li>In high-level terms, what is the difference between vector and raster data (avoid using the exact definitions of the terms)?</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/javascript">MDN JS Reference</a></li>
+<li><a class="reference external" href="https://www.w3schools.com/jsref/default.asp">W3C JS Reference</a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
