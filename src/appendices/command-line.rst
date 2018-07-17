@@ -16,8 +16,8 @@ Some terms often used as synonyms for the command line are: terminal, shell, and
 
 Command-line interfaces can vary from one operating system to another, so read up on the details for your OS.
 
-Mac
----
+Mac: The Terminal App
+---------------------
 
 Modern Mac (OS X) systems are Unix-like. This means that the built-in Terminal application works the same as does those on Unix or Linux (\*nix) machines. In fact, the Terminal app uses the most common shell program in us on \*nix systems, `Bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_.
 
@@ -25,8 +25,8 @@ To learn or practice using Bash, complete the first 5 sections of the `Ryan's Li
 
 The definitive reference (albeit a very verbose one) for Bash is the `Bash Reference Manual <https://www.gnu.org/software/bash/manual/html_node/index.html>`_.
 
-Windows
--------
+Windows: Command Prompt
+-----------------------
 
 There are multiple CLIs available for use, partly for historical reasons. The oldest Windows CLI still in use is called the *Command Prompt* or *cmd.exe* (after it's file name). It is the least Unix-like prompt on Windows systems, and while many prefer to use a more Unix-like CLI (e.g. Git Bash) most Windows programmers will have to use the Command Prompt from time to time.
 
