@@ -1,2 +1,0 @@
-JavaScript On The Web
-=====================

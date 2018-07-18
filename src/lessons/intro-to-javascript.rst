@@ -7,6 +7,18 @@ We will also discuss the basic components of web programming, including HTML, CS
 
 .. note:: Some of you may have exposure to some of these concepts already from your learning track. That's okay! Use this and the next two courses as a chance to review what you learned there, and to help your fellow GIS course learners. If you want to learn some more advanced web concepts, talk to a mentor and they can point you in the right direction.
 
+Learning Objectives
+-------------------
+
+* Create basic HTML pages using common tags (see below)
+* Use basic CSS to style page elements (see below)
+* Create variables in JS using ``let``, ``var``, and ``const``
+* Understand what it means to say that JS is "dynamically typed"
+* Write ``for`` loops in JS
+* Write conditionals (if/else constructs) in JS
+* Write (named) JS functions
+* Write anonymous functions
+
 HTML and CSS
 ------------
 

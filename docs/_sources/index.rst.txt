@@ -21,7 +21,8 @@ Lessons
    :maxdepth: 2
 
    lessons/intro-to-javascript
-
+   lessons/js-in-the-browser
+   
 Appendices
 ----------
 
