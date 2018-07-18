@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>JavaScript In The Browser &#8212; CoderGirl GIS Project Track  documentation</title>
+    <title>Intro to OpenLayers &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
@@ -18,8 +18,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Fetching Data With JavaScript" href="fetching-data-with-js.html" />
-    <link rel="prev" title="Introduction to JavaScript" href="intro-to-javascript.html" />
+    <link rel="next" title="Appendix: The Command Line" href="../appendices/command-line.html" />
+    <link rel="prev" title="Fetching Data With JavaScript" href="fetching-data-with-js.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -69,16 +69,16 @@
 <li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#practice">Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="fetching-data-with-js.html">Fetching Data With JavaScript</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Intro to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Intro to OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#openlayers-workshop">OpenLayers Workshop</a></li>
 </ul>
 </li>
 </ul>
@@ -118,10 +118,15 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">JavaScript In The Browser</a><ul>
-<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
-<li><a class="reference internal" href="#lesson">Lesson</a></li>
-<li><a class="reference internal" href="#practice">Practice</a></li>
+<li><a class="reference internal" href="#">Intro to OpenLayers</a><ul>
+<li><a class="reference internal" href="#getting-ready">Getting Ready</a><ul>
+<li><a class="reference internal" href="#review-questions">Review Questions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#openlayers-workshop">OpenLayers Workshop</a><ul>
+<li><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -130,30 +135,47 @@
       </div>
     <div class="col-md-9 content">
       
-  <div class="section" id="javascript-in-the-browser">
-<h1>JavaScript In The Browser<a class="headerlink" href="#javascript-in-the-browser" title="Permalink to this headline">¶</a></h1>
-<p>In this lesson, we’ll explore how JS works in the browser to make dynamic web pages.</p>
-<div class="section" id="learning-objectives">
-<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="intro-to-openlayers">
+<h1>Intro to OpenLayers<a class="headerlink" href="#intro-to-openlayers" title="Permalink to this headline">¶</a></h1>
+<p>OpenLayers is an open-source JS library that provides tools for rendering and interacting with GIS data in the browser. You’ll apply the learning on JavaScript from the last few lessons as you go through the official OpenLayers Workshop.</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">We recommend completing the workshop over the course of 3 weeks, specifically weeks 4-6 of this course. Setting that as a goal will keep your momentum up, and give you a solid, specific goal to strive for.</p>
+</div>
+<div class="section" id="getting-ready">
+<h2>Getting Ready<a class="headerlink" href="#getting-ready" title="Permalink to this headline">¶</a></h2>
+<p>We’ll need to understand a few additional concepts at a high level in order to use OpenLayers. Read the articles below, answering the questions listed as you go.</p>
+<p><a class="reference external" href="https://www.sitepoint.com/an-introduction-to-node-js/">What is Node and when should I use it?</a> (through the “What is Node.js used for?” section)</p>
+<p><a class="reference external" href="https://rachelscodenotes.wordpress.com/2017/08/10/js-questions-what-is-webpack/">What is Webpack?</a></p>
+<p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Classes in JS (MDN)</a></p>
+<div class="section" id="review-questions">
+<h3>Review Questions<a class="headerlink" href="#review-questions" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Describe the two primary ways JS code can be included in an HTML page: via <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> tags and external files</li>
-<li>Describe the purpose of the Document Object Model (DOM)</li>
-<li>Use DOM methods to query and manipulate elements within a page</li>
-<li>Understand DOM events and how they can be handled with JS</li>
-<li>Use your browser’s Developer Tools</li>
+<li>What is Node?</li>
+<li>What is Webpack? What kinds of tasks does Webpack carry out when incorporated into a project?</li>
+<li>How can you declare a class?</li>
+<li>How can you create an object from a given class?</li>
 </ul>
 </div>
-<div class="section" id="lesson">
-<h2>Lesson<a class="headerlink" href="#lesson" title="Permalink to this headline">¶</a></h2>
-<p>In class, we’ll discuss the DOM at a high level. We’ll also demonstrate how to use Firefox’s Developer Tools to interact with the DOM.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you are familiar with the Developer Tools of another browser (e.g. Chrome) then feel free to use that browser and it’s tools. If you are completely new to JS and Developer Tools, we recommend installing <a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/?icn=tabz">Firefox</a>.</p>
 </div>
+<div class="section" id="openlayers-workshop">
+<h2>OpenLayers Workshop<a class="headerlink" href="#openlayers-workshop" title="Permalink to this headline">¶</a></h2>
+<p>Go through the <a class="reference external" href="https://openlayers.org/workshop/en/">OpenLayers Workshop</a> at your own pace, getting help from mentors and fellow learners as needed.</p>
+<div class="section" id="notes">
+<h3>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>As you’re getting started on the tutorial, initialize the project directory as a Git repository. Commit your work at the end of each section.</li>
+<li>As you work through the workshop, you should <strong>not</strong> copy/paste the code. It can be tempting, but typing the code given by the workshop will give you a chance to think more fully about the classes and utilities being introduced, and they will “sink in” more fully.</li>
+<li>The OpenLayers Workshop introduces the <em>how</em> of OpenLayers more than the <em>what</em> or <em>why</em>. In other words, it guides you through creating front-end map-based applications while not going in-depth on the concepts of the library. We’ll try to supplement the workshop with additional materials both within class and without. Here are a couple of additional resources to look at to help you understand the material you just went through:</li>
+</ul>
+<p><a class="reference external" href="http://openlayers.org/en/latest/doc/tutorials/concepts.html">OpenLayers - Basic Concepts</a> - Read this overview of the core concepts of the OL library</p>
+<p><a class="reference external" href="http://openlayers.org/en/latest/apidoc/">OpenLayers API reference</a> - Familiarize with the basic layout and content of this site, so you can come back to it later as needed. Answer the following questions:</p>
+<ul class="simple">
+<li>When does the postrender event on a map fire?</li>
+<li>How could you add a logo to a map?</li>
+<li>What are the two render modes for vector layers?</li>
+</ul>
 </div>
-<div class="section" id="practice">
-<h2>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h2>
-<p>To dig in deeper in learning about the DOM and events, complete this short course on Stepik: <a class="reference external" href="https://stepik.org/course/18644/syllabus">The Document Object Model</a>.</p>
 </div>
 </div>
 

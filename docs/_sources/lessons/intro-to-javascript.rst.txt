@@ -19,8 +19,8 @@ Learning Objectives
 * Write (named) JS functions
 * Write anonymous functions
 
-HTML and CSS
-------------
+HTML and CSS Review
+-------------------
 
 We'll only briefly discuss HTML and CSS in class. If the topics are new to you, or you just want a review, complete the following lessons on Codecademy (you'll need to create a free account).
 
@@ -60,7 +60,7 @@ The concepts that you should be familiar with are:
 * attributes
 * Basic document structure. That is, where these should tags go within an HTML file: ``doctype``, ``html``, ``head``, ``body``, ``title``, ``link``
 
-JavaScript
+Lesson
 ----------
 
 In class we will learn the basics of JavaScript (JS) as a programming language. JS is most frequently used within web pages to make them dynamic, running within a user's web browser. However, if you dive straight into JS in the browser then it can be hard to learn the difference between those commands and features that are core to JS and those that are part of the additional functionality made available in the browser environment.

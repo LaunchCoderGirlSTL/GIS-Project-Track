@@ -22,7 +22,9 @@ Lessons
 
    lessons/intro-to-javascript
    lessons/js-in-the-browser
-   
+   lessons/fetching-data-with-js
+   lessons/intro-to-openlayers
+
 Appendices
 ----------
 
