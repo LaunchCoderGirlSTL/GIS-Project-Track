@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Working With JSON &#8212; CoderGirl GIS Project Track  documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Intro to OpenLayers" href="intro-to-openlayers.html" />
+    <link rel="prev" title="JavaScript In The Browser" href="js-in-the-browser.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg"></span>
+          GIS Project Track</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Pages <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With JSON</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#studio-cities">Studio: Cities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Intro to OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Working With JSON</a><ul>
+<li><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
+<li><a class="reference internal" href="#getting-ready">Getting Ready</a><ul>
+<li><a class="reference internal" href="#what-is-json">What is JSON?</a></li>
+<li><a class="reference internal" href="#what-is-geojson">What is GeoJSON?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#studio-cities">Studio: Cities</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#accessing-the-geojson-data">Accessing the GeoJSON Data</a></li>
+<li><a class="reference internal" href="#building-the-table">Building the Table</a></li>
+<li><a class="reference internal" href="#inserting-the-table-in-the-page">Inserting the Table in the Page</a></li>
+<li><a class="reference internal" href="#adding-data">Adding Data</a></li>
+<li><a class="reference internal" href="#bonus-mission">Bonus Mission</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="working-with-json">
+<h1>Working With JSON<a class="headerlink" href="#working-with-json" title="Permalink to this headline">¶</a></h1>
+<p>This lesson is a self-guided tutorial. In it, you will learn about a data format that is commonly used in JavaScript programs, JSON (pronounced “Jason”). And you will get additional practice working with the DOM and manipulating web page components.</p>
+<div class="section" id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Understand the structure of JSON documents</li>
+<li>Create well-formatted JSON</li>
+<li>Convert JSON to JavaScript objects</li>
+<li>Access JS object properties</li>
+<li>Create new elements and add them to a web page</li>
+</ul>
+</div>
+<div class="section" id="getting-ready">
+<h2>Getting Ready<a class="headerlink" href="#getting-ready" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-json">
+<h3>What is JSON?<a class="headerlink" href="#what-is-json" title="Permalink to this headline">¶</a></h3>
+<p>Read the article, <a class="reference external" href="https://www.elated.com/articles/json-basics/">JSON Basics: What You Need to Know</a> and answer the following questions as you go. Skip the last section, “How to work with JSON using both JavaScript and PHP.”</p>
+<ul class="simple">
+<li>What data type must JSON keys be?</li>
+<li>What date types are valid for use as JSON keys?</li>
+<li>Why is JSON used to transfer data from a server to the browser (among other uses)?</li>
+</ul>
+</div>
+<div class="section" id="what-is-geojson">
+<h3>What is GeoJSON?<a class="headerlink" href="#what-is-geojson" title="Permalink to this headline">¶</a></h3>
+<p>Read the <a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON">Wikipedia article on GeoJSON</a>, answering the following questions as you go.</p>
+<ul class="simple">
+<li>What is the relationship of GeoJSON to JSON?</li>
+<li>What are the four types of geographic features that can be represented in GeoJSON?</li>
+<li>Can GeoJSON contain data that is <em>not</em> specifically geographic, such as the population of a city, or the name of a landmark at given coordinates? If so, where in the GeoJSON format should such information be included?</li>
+</ul>
+</div>
+</div>
+<div class="section" id="studio-cities">
+<h2>Studio: Cities<a class="headerlink" href="#studio-cities" title="Permalink to this headline">¶</a></h2>
+<p>In this studio, you will build a web page that pulls in data on the largest cities in the United States, and dynamically render the data in an HTML table. The data will be in the GeoJSON format, with the latitude/longitude coordinates of the city represented as Point features.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">While we provide several code snippets for you below, you should <em>not</em> copy/paste them into your file unless we explicitly instruct you to do so. Writing the code yourself provides an opportunity for you to fully understand what each and every line is doing.</p>
+</div>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<p>Create a new folder for this project, named something like <code class="docutils literal notranslate"><span class="pre">cities_json_studio</span></code>. Within that folder, create a file <code class="docutils literal notranslate"><span class="pre">index.html</span></code> and add the following basic document code (feel free to copy/paste this one):</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!doctype html&gt;</span>
+    <span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Largest Cities In the US<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Largest Cities in the United States<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;dataContainer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Now we will set up our cities data JSON file. Visit <a class="reference external" href="https://gist.github.com/chrisbay/8a7c0b44806ff08d1d9f867cddc959c3">this page</a> and click on the <em>Download ZIP</em> button. When the file finished downloading, open the ZIP file to find a directory containing <code class="docutils literal notranslate"><span class="pre">cities.json</span></code>. Move this file to the same directory as your HTML file.</p>
+<p>Spend a minute inspecting the <code class="docutils literal notranslate"><span class="pre">cities.json</span></code> file. Notice that it contains a single JS variable, <code class="docutils literal notranslate"><span class="pre">data</span></code>, that is a GeoJSON string. Since the string is very long and broken across multiple lines, each line ends with a <code class="docutils literal notranslate"><span class="pre">\</span></code> character to “escape” the newline. Omitting one of these characters would produce a JS error when loading the file.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">JSON data will more often be structured as plain text, and not a JS string. By that, we mean it will usually look like <a class="reference external" href="https://gist.githubusercontent.com/chrisbay/76f5ec738e5c7c79890bb532cb9a0d65/raw/a913019c2472a482b857244848865bc1041d3b9b/cities.json">this</a>. To work with such a file would require us to introduce the concept of web (or AJAX) requests, which we want to avoid at this point.</p>
+</div>
+<p>Notice that the data contains a single <code class="docutils literal notranslate"><span class="pre">FeatureCollection</span></code> that has several US cities as its features. What data do we have about each city?</p>
+</div>
+<div class="section" id="accessing-the-geojson-data">
+<h3>Accessing the GeoJSON Data<a class="headerlink" href="#accessing-the-geojson-data" title="Permalink to this headline">¶</a></h3>
+<p>Now let’s pull our data into the HTML page. Add this script tag within the <code class="docutils literal notranslate"><span class="pre">head</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;cities.json&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>This will load our data into the HTML page. When it loads, the JSON string will be contained in a variable named <code class="docutils literal notranslate"><span class="pre">data</span></code> that will be accessible to other JS within the page. We’ll verify that the data loaded correctly in a moment.</p>
+<p>Next, create a new, empty <code class="docutils literal notranslate"><span class="pre">script</span></code> tag in the <code class="docutils literal notranslate"><span class="pre">head</span></code>:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Within this block, create a function named <code class="docutils literal notranslate"><span class="pre">getData</span></code>. This function should parse the data contained in the <code class="docutils literal notranslate"><span class="pre">data</span></code> variable from JSON text into a JS object, and return the object. This is how we carry out this task:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">getData</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Below <code class="docutils literal notranslate"><span class="pre">getData</span></code>, create another function, <code class="docutils literal notranslate"><span class="pre">renderTable</span></code>. This function will do the heavy lifting of building up the HTML for our table using the cities data. For now, however, let’s have it simply get the data and log it to the console.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">renderTable</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">cityCollection</span> <span class="o">=</span> <span class="nx">getData</span><span class="p">();</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cityCollection</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Open your <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file in a web browser, and then open up the dev tools (right-click &gt; <em>Inspect Element</em>, or <em>Tools &gt; Web Developer &gt; Toggle Tools</em> on Firefox). Look at the console. Do you see any data?</p>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">It’s possible that you will see an error in your console. This means that you’ve missed some syntax in one of the previous steps. Read the error, and back up to correct your code.</p>
+</div>
+<p>Spoiler alert: No! There is nothing has been logged to the console. This is because we still haven’t called the <code class="docutils literal notranslate"><span class="pre">renderTable</span></code> function from anywhere in our page. Let’s do that now.</p>
+<p>Add an <code class="docutils literal notranslate"><span class="pre">onload</span></code> event handler to the <code class="docutils literal notranslate"><span class="pre">body</span></code> element.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">body</span> <span class="na">onload</span><span class="o">=</span><span class="s">&quot;renderTable()&quot;</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>Now, when we load the page the <code class="docutils literal notranslate"><span class="pre">renderTable</span></code> function will be called when the body element is finished loading. More precisely, in JS-speak, the body’s <code class="docutils literal notranslate"><span class="pre">onload</span></code> event will fire, at which point the JS snippet <code class="docutils literal notranslate"><span class="pre">renderTable()</span></code> will be executed.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If you omit the parens, and put simply <code class="docutils literal notranslate"><span class="pre">onload=&quot;renderTable&quot;</span></code>, the function will not be called. Why?</p>
+</div>
+<p>Reload your page, and you should now see the cities GeoJSON object logged to the console. Spend a minute inspecting it. What does the structure look like? Note how the JSON syntax in the original string within <code class="docutils literal notranslate"><span class="pre">cities.json</span></code> was translated directly to JS objects, arrays, strings, etc.</p>
+</div>
+<div class="section" id="building-the-table">
+<h3>Building the Table<a class="headerlink" href="#building-the-table" title="Permalink to this headline">¶</a></h3>
+<p>Now that we’ve confirmed that the data has loaded, let’s build our table!</p>
+<p>Notice that you have an empty <code class="docutils literal notranslate"><span class="pre">div</span></code> in your page already. It looks like this:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;dataContainer&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>This will serve as an insertion point for our table. We’ll grab the DOM node using it’s ID (specifically, we’ll call <code class="docutils literal notranslate"><span class="pre">document.getElementByID()</span></code>), and then insert the table into the node.</p>
+<p>There are multiple ways that we might do this. Our method here will be to build up a single large string that contains the HTML representing a table. Then we can insert this string as the <code class="docutils literal notranslate"><span class="pre">innerHTML</span></code> attribute of our <code class="docutils literal notranslate"><span class="pre">div</span></code>.</p>
+<p>Another method would be to create new DOM nodes representing the table, it’s rows, and cells one at a time, and piece them together. This technique would lead to more complicated code and take longer to run, however.</p>
+<p>To proceed, go to your <code class="docutils literal notranslate"><span class="pre">renderTable</span></code> function and remove the <code class="docutils literal notranslate"><span class="pre">console.log</span></code> statement. Then add a new variable that contains the beginning HTML code for our table.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>var tableStr = &quot;<span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>&quot;+
+    &quot;<span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>&quot;+
+        &quot;<span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>City<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>&quot;+
+        &quot;<span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Population<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>&quot;+
+        &quot;<span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Lat/Lon<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>&quot;+
+    &quot;<span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>&quot;;
+</pre></div>
+</div>
+<p>Notice that there’s an opening <code class="docutils literal notranslate"><span class="pre">table</span></code> tag, but not a closing <code class="docutils literal notranslate"><span class="pre">table</span></code> tag. We’ll have to remember to add the closing tag after creating the individual rows of the table.</p>
+<p>Now we want to loop through our cities, and one at a time create a new table row to append to <code class="docutils literal notranslate"><span class="pre">tableStr</span></code>.</p>
+<p>Looking at the structure of the JSON, we can see that the cities are contained in an array that is the <code class="docutils literal notranslate"><span class="pre">feature</span></code> property. Let’s grab that array:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">cities</span> <span class="o">=</span> <span class="nx">cityCollection</span><span class="p">.</span><span class="nx">features</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Great! Now we can loop over the <code class="docutils literal notranslate"><span class="pre">cities</span></code> array.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">cities</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// build a new table row</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Let’s make sure what we have so far works. Inside the loop, simply log the data for a given city</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">cities</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">city</span> <span class="o">=</span> <span class="nx">cities</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">city</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Reload your page and look at the console messages. You should see several JS objects, one for each city in the data set. Again, if you see an error message, take this opportunity to read it and correct your code.</p>
+<p>Once your code works, remove the <code class="docutils literal notranslate"><span class="pre">console.log</span></code>. In it’s place, add a line to append some new HTML to <code class="docutils literal notranslate"><span class="pre">tableStr</span></code>.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">tableStr</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="o">+</span>
+        <span class="s2">&quot;&lt;td&gt;&quot;</span><span class="o">+</span><span class="nx">city</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">name</span><span class="o">+</span><span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="o">+</span>
+        <span class="s2">&quot;&lt;td&gt;&quot;</span><span class="o">+</span><span class="nx">city</span><span class="p">.</span><span class="nx">properties</span><span class="p">.</span><span class="nx">population</span><span class="o">+</span><span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="o">+</span>
+        <span class="s2">&quot;&lt;td&gt;(&quot;</span><span class="o">+</span><span class="nx">city</span><span class="p">.</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;, &quot;</span><span class="o">+</span><span class="nx">city</span><span class="p">.</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">coordinates</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;)&lt;/td&gt;&quot;</span><span class="o">+</span>
+    <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>This will build up our table, one row at a time. Outside the loop, let’s cap off our table HTML.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">tableStr</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/table&gt;&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="inserting-the-table-in-the-page">
+<h3>Inserting the Table in the Page<a class="headerlink" href="#inserting-the-table-in-the-page" title="Permalink to this headline">¶</a></h3>
+<p>Now we can grab our container node and insert the <code class="docutils literal notranslate"><span class="pre">tableStr</span></code> as its contents.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">container</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;dataContainer&quot;</span><span class="p">);</span>
+<span class="nx">container</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">tableStr</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Reload your page, and hopefully you’ll see the results directly in the page!</p>
+<p>It will look like this:</p>
+<img alt="../_images/cities_table.png" src="../_images/cities_table.png" />
+</div>
+<div class="section" id="adding-data">
+<h3>Adding Data<a class="headerlink" href="#adding-data" title="Permalink to this headline">¶</a></h3>
+<p>There are 9 cities in our table now. Let’s add another, so that we have the 10 largest cities represented. Go to Wikipedia and find info on the 10th largest city in the US, and add the data for this city to <code class="docutils literal notranslate"><span class="pre">cities.json</span></code>.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Be mindful of the syntax details when adding another city to the GeoJSON structure. There are lots of little ways that we can get the syntax wrong: Leaving off a comma after an array entry, forgetting to escape the end of each line with <code class="docutils literal notranslate"><span class="pre">\</span></code>, and so on. If your syntax in <code class="docutils literal notranslate"><span class="pre">cities.json</span></code> is off, you’ll see an error message in the console with the specific line number of the error.</p>
+</div>
+<p>Reload the page, and you’ll see the new city listed at the bottom. Notice how to add new data to our page, we didn’t have to touch any code in <code class="docutils literal notranslate"><span class="pre">index.html</span></code>. Pretty cool, huh? We could continue on in this way, adding more and more data. Since the data is external to the web page, it’s easy to add more.</p>
+</div>
+<div class="section" id="bonus-mission">
+<h3>Bonus Mission<a class="headerlink" href="#bonus-mission" title="Permalink to this headline">¶</a></h3>
+<p>If you finish up the tasks above and have some energy to spare, add some <a class="reference external" href="https://www.w3schools.com/Css/css_table.asp">CSS styles to your table</a> to make it look nicer, and more readable.</p>
+</div>
+</div>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.w3schools.com/js/js_json_intro.asp">w3c JSON Tutorial</a> - An accessible yet in-depth tutorial on JSON.</p>
+<p><a class="reference external" href="http://geojson.io/#">geojson.io</a> - An interactive web app that can generate GeoJSON based on features that you draw on a map.</p>
+<p><a class="reference external" href="http://geojson.org/">geojson.org</a> - The official specification for GeoJSON.</p>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018, LaunchCode.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

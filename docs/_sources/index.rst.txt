@@ -22,7 +22,7 @@ Lessons
 
    lessons/intro-to-javascript
    lessons/js-in-the-browser
-   lessons/fetching-data-with-js
+   lessons/working-with-json
    lessons/intro-to-openlayers
 
 Appendices
@@ -32,3 +32,4 @@ Appendices
    :maxdepth: 2
 
    appendices/command-line
+   appendices/git
