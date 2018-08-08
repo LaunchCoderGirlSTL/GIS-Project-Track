@@ -93,8 +93,20 @@
 <li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Extending Your Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Extending Your Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-controls">Adding Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publishing-additional-layers">Publishing Additional Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-yet-another-application">Creating Yet Another Application</a></li>
+</ul>
+</li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
@@ -137,7 +149,12 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Extending Your Application</a></li>
+<li><a class="reference internal" href="#">Extending Your Application</a><ul>
+<li><a class="reference internal" href="#adding-controls">Adding Controls</a></li>
+<li><a class="reference internal" href="#publishing-additional-layers">Publishing Additional Layers</a></li>
+<li><a class="reference internal" href="#creating-yet-another-application">Creating Yet Another Application</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -146,6 +163,53 @@
       
   <div class="section" id="extending-your-application">
 <h1>Extending Your Application<a class="headerlink" href="#extending-your-application" title="Permalink to this headline">¶</a></h1>
+<p>Now that you’ve created a GIS application using both front and back-end
+technologies–publishing a data set and pulling it into an interactive
+map–you’re ready to venture out on your own to continue learning.</p>
+<p>Here are a few ways in which you might proceed.</p>
+<div class="section" id="adding-controls">
+<h2>Adding Controls<a class="headerlink" href="#adding-controls" title="Permalink to this headline">¶</a></h2>
+<p>OpenLayers provides the <code class="docutils literal notranslate"><span class="pre">`Control</span></code>
+class &lt;<a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.control.Control.html">http://openlayers.org/en/latest/apidoc/ol.control.Control.html</a>&gt;`__,
+which can be used to add user controls. It has various subclasses that
+you can use out of the box, and can also be used to create controls with
+custom behavior. You might try to add:</p>
+<ul class="simple">
+<li>The ZoomSlider control for controlling zoom level</li>
+<li>A control that can be clicked on to zoom to the user’s location
+(refer to the OpenLayers Workshop to <a class="reference external" href="https://openlayers.org/workshop/en/basics/geolocation.html">see how to retrieve the user’s
+location and use
+it</a>)</li>
+<li>A control to toggle a layer’s visibility</li>
+</ul>
+</div>
+<div class="section" id="publishing-additional-layers">
+<h2>Publishing Additional Layers<a class="headerlink" href="#publishing-additional-layers" title="Permalink to this headline">¶</a></h2>
+<p>The city of St.&nbsp;Louis provides additional GIS data in the form of
+shapefiles, including <a class="reference external" href="https://www.stlouis-mo.gov/data/boundaries/ward-neighborhood-boundaries.cfm">ward and neighborhood
+boundaries</a>,
+<a class="reference external" href="https://www.stlouis-mo.gov/data/historic-districts.cfm">historic
+districts</a>,
+<a class="reference external" href="https://www.stlouis-mo.gov/data/land-use.cfm">land use data</a>, and
+more. There is a <a class="reference external" href="https://www.stlouis-mo.gov/data/types/gis.cfm">listing of all shapefile
+data</a> as well.</p>
+<p>You might also look for additional open data resources. For example,
+after a few minutes of searching for geo data for other area parks, we
+found a <a class="reference external" href="http://gis-sccmo.opendata.arcgis.com/datasets/SCCMOBILE::parks/data">shapefile for St.&nbsp;Charles County
+Parks</a>.</p>
+<p>When publishing new layers in GeoServer, be sure to pay attention to the
+SRS of the layer, along with styling (in particular, the zIndex).</p>
+</div>
+<div class="section" id="creating-yet-another-application">
+<h2>Creating Yet Another Application<a class="headerlink" href="#creating-yet-another-application" title="Permalink to this headline">¶</a></h2>
+<p>To bite off a bigger task, consider a completely different mapping
+application based on OpenLayers and GeoServer. Look for a usable open
+data set, and you can build your own app from scratch by publishing it
+in GeoServer, and starting with the OpenLayers template we used for our
+STL Parks app. You can follow the <a class="reference external" href="https://launchcodeeducation.gitbooks.io/using-geoserver-with-openlayers/content/">same setup
+steps</a>
+that we started with for this tutorial to get off and running!</p>
+</div>
 </div>
 
 
