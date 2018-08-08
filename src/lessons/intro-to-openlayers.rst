@@ -29,10 +29,12 @@ OpenLayers Workshop
 
 Go through the `OpenLayers Workshop <https://openlayers.org/workshop/en/>`_ at your own pace, getting help from mentors and fellow learners as needed. 
 
+.. note:: In the section, "The VectorTile Layer," the tutorial instructs you to sign up for an account at https://openmaptiles.com/hosting/. However, this site is now https://cloud.maptiler.com. The instructions will still work as described, but you'll find your key in **Account > Keys**, which is at https://cloud.maptiler.com/account/keys (use the Maps key).
+
 Notes
 #####
 
-* As you're getting started on the tutorial, initialize the project directory as a Git repository. Commit your work at the end of each section.
+* As you're getting started on the tutorial, initialize the project directory as a Git repository (if you're familiar with Git). Commit your work at the end of each section.
 
 * As you work through the workshop, you should **not** copy/paste the code. It can be tempting, but typing the code given by the workshop will give you a chance to think more fully about the classes and utilities being introduced, and they will "sink in" more fully.
 
