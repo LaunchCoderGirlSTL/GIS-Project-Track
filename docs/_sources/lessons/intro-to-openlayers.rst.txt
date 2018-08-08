@@ -29,6 +29,8 @@ OpenLayers Workshop
 
 Go through the `OpenLayers Workshop <https://openlayers.org/workshop/en/>`_ at your own pace, getting help from mentors and fellow learners as needed. 
 
+.. note:: In the section, "The VectorTile Layer," the tutorial instructs you to sign up for an account at https://openmaptiles.com/hosting/. However, this site is now https://cloud.maptiler.com. The instructions will still work as described, but you'll find your key in **Account > Keys**, which is at https://cloud.maptiler.com/account/keys (use the Maps key).
+
 Notes
 #####
 
