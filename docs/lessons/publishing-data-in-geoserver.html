@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Publishing Data In GeoServer &#8212; CoderGirl GIS Project Track  documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Rendering Data In OpenLayers" href="rendering-data-in-openlayers.html" />
+    <link rel="prev" title="Intro to OpenLayers" href="intro-to-openlayers.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg"></span>
+          GIS Project Track</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Pages <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Intro to OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing Data In GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#obtaining-the-data">Obtaining the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-data-store">Creating a Data Store</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publishing-a-layer">Publishing a Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Publishing Data In GeoServer</a><ul>
+<li><a class="reference internal" href="#obtaining-the-data">Obtaining the Data</a><ul>
+<li><a class="reference internal" href="#staging-the-shapefile">Staging the Shapefile</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#creating-a-data-store">Creating a Data Store</a><ul>
+<li><a class="reference internal" href="#creating-a-workspace">Creating a Workspace</a></li>
+<li><a class="reference internal" href="#creating-the-store">Creating the Store</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#publishing-a-layer">Publishing a Layer</a><ul>
+<li><a class="reference internal" href="#adding-a-new-srs">Adding a New SRS</a></li>
+<li><a class="reference internal" href="#publishing-the-layer">Publishing the Layer</a></li>
+<li><a class="reference internal" href="#previewing-the-layer">Previewing the Layer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="publishing-data-in-geoserver">
+<h1>Publishing Data In GeoServer<a class="headerlink" href="#publishing-data-in-geoserver" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="obtaining-the-data">
+<h2>Obtaining the Data<a class="headerlink" href="#obtaining-the-data" title="Permalink to this headline">¶</a></h2>
+<p>Visit the <a class="reference external" href="https://www.stlouis-mo.gov/data/">City of St.&nbsp;Louis Open
+Data</a> project page and navigate to
+the “Urban Development” section. Once there, look for “Park Data” and
+click through. From this page, download the “Parks Shapefile.” The
+download is a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file which contains the <code class="docutils literal notranslate"><span class="pre">.shp</span></code> file along with
+its sidecar files. Don’t unzip the downloaded file just yet.</p>
+<div class="section" id="staging-the-shapefile">
+<h3>Staging the Shapefile<a class="headerlink" href="#staging-the-shapefile" title="Permalink to this headline">¶</a></h3>
+<p>At this point, make sure your GeoServer VM is up and running in
+VirtualBox.</p>
+<p>For GeoServer to be able to use the shapefile, it must be placed within
+GeoServer’s data directory. Where is this directory? Our GeoServer VM is
+helpful enough to tell us when we log into it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
+Last login: Tue Mar 13 19:33:00 2018 from 10.0.2.2
+======================================================================
+Welcome! This virtual machine is designed for use with the following
+Boundless course: **Boundless Suite: GeoServer I**
+
+Useful commands:
+sudo service tomcat8 start (start Tomcat)
+sudo service tomcat8 stop  (stop Tomcat)
+sudo poweroff              (shut down the virtual machine)
+
+Useful directories:
+/opt/boundless/suite/geoserver          (GeoServer install directory)
+/var/opt/boundless/suite/geoserver/data (GeoServer data directory)
+/media/sf_share                         (share directory between host and guest)
+
+For more information: http://boundlessgeo.com
+======================================================================
+training@boundless:~$
+</pre></div>
+</div>
+<p>Note near the bottom of the login message that the data directory is
+<code class="docutils literal notranslate"><span class="pre">/var/opt/boundless/suite/geoserver/data</span></code>. This directory lives within
+the virtual machine, so we first need to place the <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file on the
+VM before we can move it to the data directory.</p>
+<p>The welcome message also tells us that <code class="docutils literal notranslate"><span class="pre">/media/sf_share</span></code> is the
+directory on the VM that is shared with our host operating system. To
+see which directory on the host system is mapped to this directory on
+the VM, go to the VirtualBox application, right-click on the <em>Boundless
+GeoServer I</em> VM, and select <em>Settings</em>. Select the <em>Shared Folders</em> pane
+and you’ll see the the directory on the host that is mapped to shared
+directory on the guest (i.e.&nbsp;the VM). In the example below, it is
+<code class="docutils literal notranslate"><span class="pre">/Users/chris</span></code>.</p>
+<div class="figure" id="id1">
+<img alt="VirtualBox settings pane for configuring folders to share between the host and guest operating systems" src="../_images/shared.png" />
+<p class="caption"><span class="caption-text">Shared folder configuration</span></p>
+</div>
+<p>Place the <code class="docutils literal notranslate"><span class="pre">parks.zip</span></code> file in this directory. Then SSH into
+the VM using <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-p</span> <span class="pre">2020</span> <span class="pre">training&#64;localhost</span></code>. Run
+<code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">/media/sf_share/</span></code> and make sure you see <code class="docutils literal notranslate"><span class="pre">parks.zip</span></code> listed.</p>
+<p>Now, move the file to the GeoServer data directory. Note that we need to
+prepend the commands with sudo since our VM user doesn’t have permission
+to write to the destination directory. Also recall that the password on
+the VM is empty (i.e.&nbsp;just press Enter when prompted for a password).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ sudo mv /media/sf_share/parks.zip /var/opt/boundless/suite/geoserver/data
+</pre></div>
+</div>
+<p>Then go to this directory and unzip the file.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ cd /var/opt/boundless/suite/geoserver/data
+training@boundless:/var/opt/boundless/suite/geoserver/data$ sudo unzip parks.zip -d stl-parks
+Archive:  parks.zip
+  inflating: stl-parks/parks.dbf
+  inflating: stl-parks/parks.prj
+  inflating: stl-parks/parks.sbn
+  inflating: stl-parks/parks.sbx
+  inflating: stl-parks/parks.shp
+  inflating: stl-parks/parks.shp.xml
+  inflating: stl-parks/parks.shx
+</pre></div>
+</div>
+<p>In the next section, we will configure GeoServer to use this data.</p>
+</div>
+</div>
+<div class="section" id="creating-a-data-store">
+<h2>Creating a Data Store<a class="headerlink" href="#creating-a-data-store" title="Permalink to this headline">¶</a></h2>
+<p>Log into the GeoServer admin portal by visiting
+<a class="reference external" href="http://localhost:8080/geoserver/">http://localhost:8080/geoserver/</a> in your browser and entering the
+credentials admin/geoserver.</p>
+<div class="section" id="creating-a-workspace">
+<h3>Creating a Workspace<a class="headerlink" href="#creating-a-workspace" title="Permalink to this headline">¶</a></h3>
+<p>Recall that in GeoServer, every data store belongs to a workspace.
+Create a new workspace by selecting <em>Data &gt; Workspaces</em> from the menu at
+left. Select <em>Add new workspace</em>. Name the workspace <strong>lc</strong> and give it
+the URI <strong>http://launchcode.org</strong>.</p>
+<div class="figure" id="id2">
+<img alt="GeoServer page for creating a new workspace" src="../_images/workspace.png" />
+<p class="caption"><span class="caption-text">Create a new workspace</span></p>
+</div>
+</div>
+<div class="section" id="creating-the-store">
+<h3>Creating the Store<a class="headerlink" href="#creating-the-store" title="Permalink to this headline">¶</a></h3>
+<p>Visit <em>Data &gt; Stores</em> and select <em>Add store</em>. Select <em>Shapefile</em> from
+the <em>Vector Data Sources</em> list. Fill out the required fields, and then
+browse to the <em>.shp</em> file that you previously placed in <em>stl-parks</em>
+subdirectory of GeoServer’s data directory.</p>
+<div class="figure" id="id3">
+<img alt="GeoServer page for creating a new vector data source" src="../_images/data-source.png" />
+<p class="caption"><span class="caption-text">Create a new data source</span></p>
+</div>
+<p>Upon saving the store, you will immediately be presented with
+the option of publishing a new layer named <em>parks</em>. Let’s try to do
+this.</p>
+<p>After clicking on the <em>Publish</em> link, you will see the <strong>Edit Layer</strong>
+form. Scroll down to the <strong>Coordinate Reference Systems</strong> section. This
+is where we configure the native and published SRS for the layer. Notice
+that the <strong>Native SRS</strong> field contains UNKNOWN, with the link at right
+showing an SRS named “NAD_1983_StatePlane_Missouri_East_FIPS_2401_Feet…”
+This SRS is the spatial reference system declared within the shapefile
+itself, but if we try to find it within GeoServer, we will fail.</p>
+<p>Click on <em>Find</em> next to the <strong>Declared SRS</strong>field and search for
+“1983”. The only result returned is <em>not</em> the SRS described by the file.
+In the next section, we’ll fix this issue by adding the SRS to GeoServer
+and finally publishing the layer.</p>
+</div>
+</div>
+<div class="section" id="publishing-a-layer">
+<h2>Publishing a Layer<a class="headerlink" href="#publishing-a-layer" title="Permalink to this headline">¶</a></h2>
+<p>In the previous section, we created a new workspace and data store from
+a shapefile, and discovered that the geo data within the shapefile used
+an SRS that was unknown to our GeoServer. In order for the data to be
+properly served by GeoServer, a layer must be configured with the
+correct SRS. Fortunately, we can add new SRS configurations to
+GeoServer.</p>
+<div class="section" id="adding-a-new-srs">
+<h3>Adding a New SRS<a class="headerlink" href="#adding-a-new-srs" title="Permalink to this headline">¶</a></h3>
+<p>We will add a new SRS definition to GeoServer following the
+<a class="reference external" href="http://docs.geoserver.org/stable/en/user/configuration/crshandling/customcrs.html">instructions in the GeoServer
+documentation</a>.</p>
+<p>If you don’t have a terminal open and logged in to your GeoServer VM, do
+so now:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
+</pre></div>
+</div>
+<p>Recall that the password is empty.</p>
+<p>Once logged into your GeoServer VM, go to the data directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ cd /var/opt/boundless/suite/geoserver/data
+</pre></div>
+</div>
+<p>From here, descend one more directory into <code class="docutils literal notranslate"><span class="pre">user_projections</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:/var/opt/boundless/suite/geoserver/data$ cd user_projections/
+</pre></div>
+</div>
+<p>Open the file <code class="docutils literal notranslate"><span class="pre">epsg.properties</span></code> for editing in the text editor nano:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:/var/opt/boundless/suite/geoserver/data/user_projections$ sudo nano epsg.properties
+</pre></div>
+</div>
+<p>Use the down arrow key to navigate to the end of the file. We’ll add the
+new SRS definition here. We need to grab the SRS defintion, so let’s
+head over to <a class="reference external" href="http://epsg.io/">epsg.io</a>, a site that is a reference
+for coordinate system definitions.</p>
+<p>Search for “1983 missouri 2401” and the first result you see should be
+the coordinate system we’re looking for, “NAD 1983 StatePlane Missouri
+East FIPS 2401 Feet.” Select this result to see the full details. Select
+and copy the GeoServer version of the coordinate system.</p>
+<p>Back in your open text editor, on a new line at the end of the file,
+paste in the definition. Then use <code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code> to quit nano, select “Yes”
+when asked if you want to save the file.</p>
+<p>To finish up, we need to restart GeoServer:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo service tomcat8 stop
+[sudo] password for training:
+Stopping tomcat8:  *
+$ sudo service tomcat8 start
+Starting tomcat8:  *
+</pre></div>
+</div>
+<p>Verify that the new SRS was found by GeoServer by selecting <em>Demos</em> from
+the left-hand menu, and then choosing <em>SRS List</em>. Search for the
+coordinate system by number, 102696. If it isn’t, retrace your steps
+from the instructions above.</p>
+</div>
+<div class="section" id="publishing-the-layer">
+<h3>Publishing the Layer<a class="headerlink" href="#publishing-the-layer" title="Permalink to this headline">¶</a></h3>
+<p>We can now properly publish the layer. Go to <em>Data &gt; Layers</em> and select
+<em>Add a new layer</em>. Choose the data store you created for the parks data,
+and click on <em>Publish</em> next to the <code class="docutils literal notranslate"><span class="pre">parks</span></code> layer.</p>
+<p>The only settings on the Edit Layer page that need to be changed are in
+the <strong>Coordinate Reference Systems</strong> and <strong>Bounding Box</strong> sections.
+Update these to match the displayed settings below, finding the
+<strong>Declared SRS</strong> using the Find dialog and searching for “102696.” The
+<strong>Bounding Box</strong> fields are populated by simply clicking on the
+highlighted links.</p>
+<div class="figure" id="id4">
+<img alt="Page for configuring the new layer's properties" src="../_images/crs-config.png" />
+<p class="caption"><span class="caption-text">Configuring the coordinate reference system and bounding box</span></p>
+</div>
+<p>Save the new layer, and give yourself a high five for publishing your
+first data set in GeoServer!</p>
+</div>
+<div class="section" id="previewing-the-layer">
+<h3>Previewing the Layer<a class="headerlink" href="#previewing-the-layer" title="Permalink to this headline">¶</a></h3>
+<p>Let’s make sure everything looks good with the layer before moving on.
+Navigate to <em>Data &gt; Layer Preview</em> and choose the <em>OpenLayers</em> option
+for the newly-created layer. A new tab will open with the geometries in
+the given layer displayed in a small box. Without a base layer to give
+them context, they’ll look a bit funny, but you should recocnize some
+familiar city parks. If your preview doesn’t look like this, then edit
+the layer and make sure you have the CRS and Bounding Box settings
+correct.</p>
+<div class="figure" id="id5">
+<a class="reference internal image-reference" href="../_images/layer-preview.png"><img alt="Preview image of the parks data layer" src="../_images/layer-preview.png" style="width: 500px;" /></a>
+<p class="caption"><span class="caption-text">Park data layer preview</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018, LaunchCode.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

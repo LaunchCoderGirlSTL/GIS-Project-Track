@@ -24,6 +24,9 @@ Lessons
    lessons/js-in-the-browser
    lessons/working-with-json
    lessons/intro-to-openlayers
+   lessons/publishing-data-in-geoserver
+   lessons/rendering-data-in-openlayers
+   lessons/extending-your-app
 
 Appendices
 ----------
