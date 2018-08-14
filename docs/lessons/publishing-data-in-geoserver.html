@@ -19,7 +19,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Rendering Data In OpenLayers" href="rendering-data-in-openlayers.html" />
-    <link rel="prev" title="Intro to OpenLayers" href="intro-to-openlayers.html" />
+    <link rel="prev" title="Introduction to GeoServer" href="intro-to-geoserver.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -61,7 +61,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
 </ul>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
@@ -82,9 +82,19 @@
 <li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
 </ul>
 </li>
+</ul>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Intro to OpenLayers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#geoserver-concepts">GeoServer Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#geoserver-setup">GeoServer Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing Data In GeoServer</a><ul>
@@ -174,7 +184,7 @@
     <div class="col-md-9 content">
       
   <div class="section" id="publishing-data-in-geoserver">
-<h1>Publishing Data In GeoServer<a class="headerlink" href="#publishing-data-in-geoserver" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Publishing Data In GeoServer<a class="headerlink" href="#publishing-data-in-geoserver" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="obtaining-the-data">
 <h2>Obtaining the Data<a class="headerlink" href="#obtaining-the-data" title="Permalink to this headline">¶</a></h2>
 <p>Visit the <a class="reference external" href="https://www.stlouis-mo.gov/data/">City of St.&nbsp;Louis Open
@@ -223,7 +233,7 @@ GeoServer I</em> VM, and select <em>Settings</em>. Select the <em>Shared Folders
 and you’ll see the the directory on the host that is mapped to shared
 directory on the guest (i.e.&nbsp;the VM). In the example below, it is
 <code class="docutils literal notranslate"><span class="pre">/Users/chris</span></code>.</p>
-<div class="figure" id="id1">
+<div class="figure" id="id2">
 <img alt="VirtualBox settings pane for configuring folders to share between the host and guest operating systems" src="../_images/shared.png" />
 <p class="caption"><span class="caption-text">Shared folder configuration</span></p>
 </div>
@@ -264,7 +274,7 @@ credentials admin/geoserver.</p>
 Create a new workspace by selecting <em>Data &gt; Workspaces</em> from the menu at
 left. Select <em>Add new workspace</em>. Name the workspace <strong>lc</strong> and give it
 the URI <strong>http://launchcode.org</strong>.</p>
-<div class="figure" id="id2">
+<div class="figure" id="id3">
 <img alt="GeoServer page for creating a new workspace" src="../_images/workspace.png" />
 <p class="caption"><span class="caption-text">Create a new workspace</span></p>
 </div>
@@ -275,7 +285,7 @@ the URI <strong>http://launchcode.org</strong>.</p>
 the <em>Vector Data Sources</em> list. Fill out the required fields, and then
 browse to the <em>.shp</em> file that you previously placed in <em>stl-parks</em>
 subdirectory of GeoServer’s data directory.</p>
-<div class="figure" id="id3">
+<div class="figure" id="id4">
 <img alt="GeoServer page for creating a new vector data source" src="../_images/data-source.png" />
 <p class="caption"><span class="caption-text">Create a new data source</span></p>
 </div>
@@ -361,7 +371,7 @@ Update these to match the displayed settings below, finding the
 <strong>Declared SRS</strong> using the Find dialog and searching for “102696.” The
 <strong>Bounding Box</strong> fields are populated by simply clicking on the
 highlighted links.</p>
-<div class="figure" id="id4">
+<div class="figure" id="id5">
 <img alt="Page for configuring the new layer's properties" src="../_images/crs-config.png" />
 <p class="caption"><span class="caption-text">Configuring the coordinate reference system and bounding box</span></p>
 </div>
@@ -378,10 +388,11 @@ them context, they’ll look a bit funny, but you should recocnize some
 familiar city parks. If your preview doesn’t look like this, then edit
 the layer and make sure you have the CRS and Bounding Box settings
 correct.</p>
-<div class="figure" id="id5">
+<div class="figure" id="id6">
 <a class="reference internal image-reference" href="../_images/layer-preview.png"><img alt="Preview image of the parks data layer" src="../_images/layer-preview.png" style="width: 500px;" /></a>
 <p class="caption"><span class="caption-text">Park data layer preview</span></p>
 </div>
+<p>Now that your data is usable, let’s learn how to pull it into OpenLayers in <a class="reference internal" href="rendering-data-in-openlayers.html#rendering-data-in-open-layers"><span class="std std-ref">Rendering Data In OpenLayers</span></a></p>
 </div>
 </div>
 </div>

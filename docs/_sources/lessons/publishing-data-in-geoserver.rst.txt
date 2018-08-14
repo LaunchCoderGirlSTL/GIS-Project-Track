@@ -1,3 +1,5 @@
+.. _publishing-data-in-geoserver:
+
 Publishing Data In GeoServer
 ============================
 
@@ -259,3 +261,4 @@ correct.
 
    Park data layer preview
 
+Now that your data is usable, let's learn how to pull it into OpenLayers in :ref:`rendering-data-in-open-layers`

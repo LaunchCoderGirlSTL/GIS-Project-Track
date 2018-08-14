@@ -1,3 +1,5 @@
+.. _extending-your-app:
+
 Extending Your Application
 ==========================
 
@@ -10,7 +12,7 @@ Here are a few ways in which you might proceed.
 Adding Controls
 ---------------
 
-OpenLayers provides the ```Control``
+OpenLayers provides the `Control
 class <http://openlayers.org/en/latest/apidoc/ol.control.Control.html>`__,
 which can be used to add user controls. It has various subclasses that
 you can use out of the box, and can also be used to create controls with
@@ -50,6 +52,5 @@ To bite off a bigger task, consider a completely different mapping
 application based on OpenLayers and GeoServer. Look for a usable open
 data set, and you can build your own app from scratch by publishing it
 in GeoServer, and starting with the OpenLayers template we used for our
-STL Parks app. You can follow the `same setup
-steps <https://launchcodeeducation.gitbooks.io/using-geoserver-with-openlayers/content/>`__
+STL Parks app. You can follow the :ref:`ol-geoserver-setup`
 that we started with for this tutorial to get off and running!

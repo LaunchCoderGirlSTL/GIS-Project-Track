@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Intro to OpenLayers &#8212; CoderGirl GIS Project Track  documentation</title>
+    <title>Introduction to GeoServer &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
@@ -18,8 +18,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction to GeoServer" href="intro-to-geoserver.html" />
-    <link rel="prev" title="Working With JSON" href="working-with-json.html" />
+    <link rel="next" title="Publishing Data In GeoServer" href="publishing-data-in-geoserver.html" />
+    <link rel="prev" title="Intro to OpenLayers" href="intro-to-openlayers.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -83,18 +83,18 @@
 </ul>
 </li>
 </ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Intro to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#openlayers-workshop">OpenLayers Workshop</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Intro to OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
 </ul>
 </li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#geoserver-concepts">GeoServer Concepts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#geoserver-setup">GeoServer Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#geoserver-concepts">GeoServer Concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geoserver-setup">GeoServer Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
@@ -159,13 +159,12 @@
   <div class="row">
       <div class="col-md-3">
         <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
-<li><a class="reference internal" href="#">Intro to OpenLayers</a><ul>
-<li><a class="reference internal" href="#getting-ready">Getting Ready</a><ul>
-<li><a class="reference internal" href="#review-questions">Review Questions</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#openlayers-workshop">OpenLayers Workshop</a><ul>
-<li><a class="reference internal" href="#notes">Notes</a></li>
+<li><a class="reference internal" href="#">Introduction to GeoServer</a><ul>
+<li><a class="reference internal" href="#geoserver-concepts">GeoServer Concepts</a></li>
+<li><a class="reference internal" href="#geoserver-setup">GeoServer Setup</a></li>
+<li><a class="reference internal" href="#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a><ul>
+<li><a class="reference internal" href="#the-project">The Project</a></li>
+<li><a class="reference internal" href="#setup">Setup</a></li>
 </ul>
 </li>
 </ul>
@@ -176,50 +175,53 @@
       </div>
     <div class="col-md-9 content">
       
-  <div class="section" id="intro-to-openlayers">
-<h1>Intro to OpenLayers<a class="headerlink" href="#intro-to-openlayers" title="Permalink to this headline">¶</a></h1>
-<p>OpenLayers is an open-source JS library that provides tools for rendering and interacting with GIS data in the browser. You’ll apply the learning on JavaScript from the last few lessons as you go through the official OpenLayers Workshop.</p>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">We recommend completing the workshop over the course of 3 weeks, specifically weeks 4-6 of this course. Setting that as a goal will keep your momentum up, and give you a solid, specific goal to strive for.</p>
-</div>
-<div class="section" id="getting-ready">
-<h2>Getting Ready<a class="headerlink" href="#getting-ready" title="Permalink to this headline">¶</a></h2>
-<p>We’ll need to understand a few additional concepts at a high level in order to use OpenLayers. Read the articles below, answering the questions listed as you go.</p>
-<p><a class="reference external" href="https://www.sitepoint.com/an-introduction-to-node-js/">What is Node and when should I use it?</a> (through the “What is Node.js used for?” section)</p>
-<p><a class="reference external" href="https://rachelscodenotes.wordpress.com/2017/08/10/js-questions-what-is-webpack/">What is Webpack?</a></p>
-<p><a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes">Classes in JS (MDN)</a></p>
-<div class="section" id="review-questions">
-<h3>Review Questions<a class="headerlink" href="#review-questions" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="introduction-to-geoserver">
+<h1>Introduction to GeoServer<a class="headerlink" href="#introduction-to-geoserver" title="Permalink to this headline">¶</a></h1>
+<p>TODO - intro paragraph</p>
+<div class="section" id="geoserver-concepts">
+<h2>GeoServer Concepts<a class="headerlink" href="#geoserver-concepts" title="Permalink to this headline">¶</a></h2>
+<p>What is an API?</p>
+<p>What is a web service?</p>
 <ul class="simple">
-<li>What is Node?</li>
-<li>What is Webpack? What kinds of tasks does Webpack carry out when incorporated into a project?</li>
-<li>How can you declare a class?</li>
-<li>How can you create an object from a given class?</li>
+<li>WFS</li>
+<li>WMS</li>
 </ul>
 </div>
-</div>
-<div class="section" id="openlayers-workshop">
-<h2>OpenLayers Workshop<a class="headerlink" href="#openlayers-workshop" title="Permalink to this headline">¶</a></h2>
-<p>Go through the <a class="reference external" href="https://openlayers.org/workshop/en/">OpenLayers Workshop</a> at your own pace, getting help from mentors and fellow learners as needed.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">In the section, “The VectorTile Layer,” the tutorial instructs you to sign up for an account at <a class="reference external" href="https://openmaptiles.com/hosting/">https://openmaptiles.com/hosting/</a>. However, this site is now <a class="reference external" href="https://cloud.maptiler.com">https://cloud.maptiler.com</a>. The instructions will still work as described, but you’ll find your key in <strong>Account &gt; Keys</strong>, which is at <a class="reference external" href="https://cloud.maptiler.com/account/keys">https://cloud.maptiler.com/account/keys</a> (use the Maps key).</p>
-</div>
-<div class="section" id="notes">
-<h3>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="geoserver-setup">
+<h2>GeoServer Setup<a class="headerlink" href="#geoserver-setup" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>As you’re getting started on the tutorial, initialize the project directory as a Git repository (if you’re familiar with Git). Commit your work at the end of each section.</li>
-<li>As you work through the workshop, you should <strong>not</strong> copy/paste the code. It can be tempting, but typing the code given by the workshop will give you a chance to think more fully about the classes and utilities being introduced, and they will “sink in” more fully.</li>
-<li>The OpenLayers Workshop introduces the <em>how</em> of OpenLayers more than the <em>what</em> or <em>why</em>. In other words, it guides you through creating front-end map-based applications while not going in-depth on the concepts of the library. We’ll try to supplement the workshop with additional materials both within class and without. Here are a couple of additional resources to look at to help you understand the material you just went through:</li>
+<li>Install VirtualBox</li>
+<li>Download and install VM image</li>
+<li>Test</li>
 </ul>
-<p><a class="reference external" href="http://openlayers.org/en/latest/doc/tutorials/concepts.html">OpenLayers - Basic Concepts</a> - Read this overview of the core concepts of the OL library</p>
-<p><a class="reference external" href="http://openlayers.org/en/latest/apidoc/">OpenLayers API reference</a> - Familiarize with the basic layout and content of this site, so you can come back to it later as needed. Answer the following questions:</p>
-<ul class="simple">
-<li>When does the postrender event on a map fire?</li>
-<li>How could you add a logo to a map?</li>
-<li>What are the two render modes for vector layers?</li>
-</ul>
+</div>
+<div class="section" id="geoserver-openlayers-tutorial-overview">
+<h2>GeoServer + OpenLayers Tutorial Overview<a class="headerlink" href="#geoserver-openlayers-tutorial-overview" title="Permalink to this headline">¶</a></h2>
+<p>The next few lessons demonstrate how to use GeoServer and OpenLayers together to create dynamic, interactive mapping applications. It assumes that you have completed all prior lessons, including the OpenLayers workshop.</p>
+<div class="section" id="the-project">
+<h3>The Project<a class="headerlink" href="#the-project" title="Permalink to this headline">¶</a></h3>
+<p>We will use a data set published by the <a class="reference external" href="https://www.stlouis-mo.gov/data/">City of St. Louis Open Data</a> project to render St. Louis City parks on a map. The end result will look something like this, displaying park names when the user clicks on a given park.</p>
+<div class="figure" id="id1">
+<img alt="Screenshot of a web application displaying a map of St. Louis parks" src="../_images/stl-parks.png" />
+<p class="caption"><span class="caption-text">The St. Louis Parks app, using GeoServer and OpenLayers</span></p>
+</div>
+</div>
+<div class="section" id="setup">
+<span id="ol-geoserver-setup"></span><h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<p>Clone the repository, renaming the project directory as you do so:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/LaunchCodeEducation/openlayers-template.git stl-parks
+</pre></div>
+</div>
+<p>Then create a new GitHub repository named <code class="docutils literal notranslate"><span class="pre">stl-parks</span></code> in your account to store your project code. Connect your local repository to your new remote repository by running these Git commands from the project root</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git remote rm origin
+$ git remote add origin REPO_URL
+$ git push origin master
+</pre></div>
+</div>
+<p>Here, <code class="docutils literal notranslate"><span class="pre">REPO_URL</span></code> is the project URL (ending in <code class="docutils literal notranslate"><span class="pre">.git</span></code>) for the repository you created above.</p>
+<p>Install the project dependencies via NPM. From the project root, run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code>.</p>
+<p>Then make sure the project builds and runs by running <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">start</span></code> and visiting <code class="docutils literal notranslate"><span class="pre">localhost:3000</span></code> in your browser. You should see a “Hello World” message in an alert box.</p>
+<p>You are now ready to learn about <a class="reference internal" href="publishing-data-in-geoserver.html#publishing-data-in-geoserver"><span class="std std-ref">Publishing Data In GeoServer</span></a>.</p>
 </div>
 </div>
 </div>

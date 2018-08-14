@@ -1,3 +1,5 @@
+.. _rendering-data-in-open-layers:
+
 Rendering Data In OpenLayers
 ============================
 
@@ -452,7 +454,7 @@ When you have it working, your map will look something like this:
 
 Congrats! Your St. Louis City parks map is looking great!
 
-Continue on to the next section to read about some additional ways that
+Continue on to the :ref:`extending-your-app` section to read about some additional ways that
 you might extend the app to continue learning about mapping
 applications, OpenLayers, and GeoServer.
 
