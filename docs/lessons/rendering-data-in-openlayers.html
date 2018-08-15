@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Rendering Data In OpenLayers &#8212; CoderGirl GIS Project Track  documentation</title>
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
+    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extending Your Application" href="extending-your-app.html" />
+    <link rel="prev" title="Publishing Data In GeoServer" href="publishing-data-in-geoserver.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg"></span>
+          GIS Project Track</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Pages <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
+</ul>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#web-services">Web Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
+<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rendering Data In OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-base-map">Adding a Base Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fetching-parks-data">Fetching Parks Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#styling-features">Styling Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-it-interactive">Making It Interactive</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul>
+<li><a class="reference internal" href="#">Rendering Data In OpenLayers</a><ul>
+<li><a class="reference internal" href="#adding-a-base-map">Adding a Base Map</a></li>
+<li><a class="reference internal" href="#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a><ul>
+<li><a class="reference internal" href="#getting-our-hands-dirty">Getting Our Hands Dirty</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#fetching-parks-data">Fetching Parks Data</a><ul>
+<li><a class="reference internal" href="#creating-the-layer">Creating the Layer</a></li>
+<li><a class="reference internal" href="#populaing-the-layer">Populaing the Layer</a><ul>
+<li><a class="reference internal" href="#building-the-request">Building the Request</a></li>
+<li><a class="reference internal" href="#making-the-request">Making the Request</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#styling-features">Styling Features</a></li>
+<li><a class="reference internal" href="#making-it-interactive">Making It Interactive</a><ul>
+<li><a class="reference internal" href="#getting-park-names">Getting Park Names</a></li>
+<li><a class="reference internal" href="#positioning-the-overlay">Positioning the Overlay</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="col-md-9 content">
+      
+  <div class="section" id="rendering-data-in-openlayers">
+<span id="rendering-data-in-open-layers"></span><h1>Rendering Data In OpenLayers<a class="headerlink" href="#rendering-data-in-openlayers" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="adding-a-base-map">
+<h2>Adding a Base Map<a class="headerlink" href="#adding-a-base-map" title="Permalink to this headline">¶</a></h2>
+<p>Open up the OpenLayers project you set up at the beginning of this
+tutorial. In a seperate terminal window, go ahead and build and serve
+the project with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">start</span></code>.</p>
+<p>Create a new folder at the top level of the project named <code class="docutils literal notranslate"><span class="pre">data</span></code>.
+Create a new file in data named <code class="docutils literal notranslate"><span class="pre">osm-basemap.json</span></code>. Copy/paste the
+<a class="reference external" href="https://gist.github.com/chrisbay/9adf9b57611fa1806d2c1dffa65f1df0">contents</a>
+of our <code class="docutils literal notranslate"><span class="pre">osm-basemap.json</span></code> file and save. This file is derived from the
+<code class="docutils literal notranslate"><span class="pre">bright.json</span></code> file that you worked with on the OpenLayers Workshop,
+with a bit of customization. We’ve removed several unneeded layers to
+clean up the map, and have scaled and cenetered the map on St.&nbsp;Louis.
+Scroll down to line 41 and you’ll see:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;center&quot;</span><span class="o">:</span> <span class="p">[</span>
+  <span class="o">-</span><span class="mf">90.2549</span><span class="p">,</span><span class="mf">38.6447</span>
+<span class="p">],</span>
+<span class="s2">&quot;zoom&quot;</span><span class="o">:</span> <span class="mi">13</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>You can customize this if you want a slightly different initial center
+or scaling.</p>
+<p>Open main.js, and add the following lines:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span><span class="nx">apply</span><span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;ol-mapbox-style&#39;</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">apply</span><span class="p">(</span><span class="s1">&#39;map-container&#39;</span><span class="p">,</span> <span class="s1">&#39;./data/osm-basemap.json&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Visit <a class="reference external" href="http://localhost:3000/">localhost:3000</a> in your browser and
+you should see something like the following.</p>
+<div class="figure" id="id1">
+<img alt="The OpenStreetMaps base map centered on St. Louis" src="../_images/basemap.png" />
+<p class="caption"><span class="caption-text">Our base map, centered on St. Louis</span></p>
+</div>
+<p>It’s pretty, but also sort of plain. We’ll add our parks in the next
+step.</p>
+<p>If you do not see a map in your application, check to be sure the JSON
+was copied correctly.</p>
+</div>
+<div class="section" id="enabling-cors-in-geoserver">
+<h2>Enabling CORS in GeoServer<a class="headerlink" href="#enabling-cors-in-geoserver" title="Permalink to this headline">¶</a></h2>
+<p>CORS stands for <strong>Cross-Origin Resource Sharing</strong>, and it refers to the
+ability of a JavaScript resource from one origin to access resources
+from another origin.</p>
+<p>For example, a script hosted at <code class="docutils literal notranslate"><span class="pre">mydomain.com</span></code> may not access
+resources at <code class="docutils literal notranslate"><span class="pre">yourdomain.com</span></code> unless the latter domain allows it to do
+so. This is a security precaution, to prevent malicious scripts from
+accessing resources they shouldn’t have access to. Most servers disable
+CORS to some degree (or entirely). Resource sharing can be enabled
+at-large (for requests from any origin) or on a case-by-case basis (only
+for some origins).</p>
+<p>We encourage you to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">read more about
+CORS</a>, as it
+is an essential topic for anybody doing front-end development.</p>
+<p>If you were to try to access data from GeoServer (hosted at
+<code class="docutils literal notranslate"><span class="pre">localhost:8080</span></code>) via your OpenLayers/JavaScript app (hosted at
+<code class="docutils literal notranslate"><span class="pre">localhost:3000</span></code>) you would likely see an error in your browser
+console referring to the <code class="docutils literal notranslate"><span class="pre">Access-Control-Allow-Origin</span></code> HTTP header
+(i.e.&nbsp;GeoServer). This header is set by the server that is restricting
+cross-origin access. To enable CORS, we need to update GeoServer’s
+configuration.</p>
+<div class="section" id="getting-our-hands-dirty">
+<h3>Getting Our Hands Dirty<a class="headerlink" href="#getting-our-hands-dirty" title="Permalink to this headline">¶</a></h3>
+<p>From a terminal, SSH into your GeoServer VM:
+<code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-p</span> <span class="pre">2020</span> <span class="pre">training&#64;localhost</span></code>. From there, go to the directory for
+GeoServer, and then into the WEB-INF subdirectory.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd /opt/boundless/suite/geoserver/
+$ cd WEB-INF
+</pre></div>
+</div>
+<p>This directory contains a file, <code class="docutils literal notranslate"><span class="pre">web.xml</span></code>, that configures the
+GeoServer application. Open the file with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo nano web.xml
+</pre></div>
+</div>
+<p>Move your cursor to a blank line just inside the <code class="docutils literal notranslate"><span class="pre">&lt;web-app&gt;</span></code> tag (you
+can create such a blank line, if necessary, but don’t go within any
+other XML tag). Paste this code block:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;filter&gt;</span>
+  <span class="nt">&lt;filter-name&gt;</span>CorsFilter<span class="nt">&lt;/filter-name&gt;</span>
+  <span class="nt">&lt;filter-class&gt;</span>org.apache.catalina.filters.CorsFilter<span class="nt">&lt;/filter-class&gt;</span>
+<span class="nt">&lt;/filter&gt;</span>
+<span class="nt">&lt;filter-mapping&gt;</span>
+  <span class="nt">&lt;filter-name&gt;</span>CorsFilter<span class="nt">&lt;/filter-name&gt;</span>
+  <span class="nt">&lt;url-pattern&gt;</span>/*<span class="nt">&lt;/url-pattern&gt;</span>
+<span class="nt">&lt;/filter-mapping&gt;</span>
+</pre></div>
+</div>
+<p>This will allow access to GeoServer resources from <em>any</em> origin. For a
+production server, this is definitely not something we’d want to allow,
+but it’s fine for local development.</p>
+<p>Save the file by entering <code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code> and then answering “Y” when asked
+if you want to save your changes. For the changes to take effect, we
+need to restart the Tomcat server (i.e.&nbsp;the application server running
+GeoServer).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo service tomcat8 stop
+$ sudo service tomcat8 start
+</pre></div>
+</div>
+<p>That’s it! In upcoming sections, you’ll be able to fetch geo data from
+your OpenLayers app with no CORS errors.</p>
+</div>
+</div>
+<div class="section" id="fetching-parks-data">
+<h2>Fetching Parks Data<a class="headerlink" href="#fetching-parks-data" title="Permalink to this headline">¶</a></h2>
+<p>For these last sections, we leave some details to you to figure out.
+Refer to the <a class="reference external" href="https://openlayers.org/workshop/en/">OpenLayers
+Workshop</a> and the <a class="reference external" href="http://openlayers.org/en/latest/apidoc/index.html">OpenLayers
+API</a> whenever get
+stuck or need more info. Everything we’ll ask you to do will either have
+been covered in the workshop, or will be covered in another related
+resource that we’ll provide.</p>
+<div class="section" id="creating-the-layer">
+<h3>Creating the Layer<a class="headerlink" href="#creating-the-layer" title="Permalink to this headline">¶</a></h3>
+<p>Before we can fetch data from GeoServer, we need a layer in which to put
+it. We’ll create a vector layer to store the features fetched from the
+parks WFS. In this and all remaining sections, all JavaScript code
+referenced will be in <code class="docutils literal notranslate"><span class="pre">main.js</span></code>.</p>
+<p>First, add a couple of imports:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="nx">VectorLayer</span> <span class="nx">from</span> <span class="s1">&#39;ol/layer/vector&#39;</span><span class="p">;</span>
+<span class="kr">import</span> <span class="nx">VectorSource</span> <span class="nx">from</span> <span class="s1">&#39;ol/source/vector&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Then, below the line which creates the map, create a vector source and
+layer, and add them to the map.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">parksSource</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VectorSource</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">parksLayer</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">VectorLayer</span><span class="p">({</span>
+  <span class="nx">source</span><span class="o">:</span> <span class="nx">parksSource</span>
+<span class="p">});</span>
+
+<span class="nx">parksLayer</span><span class="p">.</span><span class="nx">setZIndex</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+<span class="nx">map</span><span class="p">.</span><span class="nx">addLayer</span><span class="p">(</span><span class="nx">parksLayer</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>Note the next to last line in the snippet above. This sets the z-index
+of the parks layer to a relatively high number, which ensures that the
+parks will display “on top of” other layers. Layers with higher z-index
+are displayed above layers with lower z-index.</p>
+<p>If you were to refresh your app, nothing would change. While we’ve added
+a layer, there are not features in the layer to display!</p>
+</div>
+<div class="section" id="populaing-the-layer">
+<h3>Populaing the Layer<a class="headerlink" href="#populaing-the-layer" title="Permalink to this headline">¶</a></h3>
+<p>We’ll follow the <a class="reference external" href="https://openlayers.org/en/latest/examples/vector-wfs-getfeature.html">WFS - GetFeature
+demo</a>
+provided by OpenLayers. Have a look at this code and try to decipher
+what it is doing before continuing on here. Note that the code is
+structured to be embedded in an HTML file, rather than in a separate JS
+file. Hence, there are no imports and the OpenLayers references have the
+full object namespaces referenced.</p>
+<p>Let’s adapt this example for our purposes. In particular, we want to
+adapt the two code blocks near the bottom, which look like this in the
+example:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="c1">// generate a GetFeature request</span>
+<span class="kd">var</span> <span class="nx">featureRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">WFS</span><span class="p">().</span><span class="nx">writeGetFeature</span><span class="p">({</span>
+  <span class="nx">srsName</span><span class="o">:</span> <span class="s1">&#39;EPSG:3857&#39;</span><span class="p">,</span>
+  <span class="nx">featureNS</span><span class="o">:</span> <span class="s1">&#39;http://openstreemap.org&#39;</span><span class="p">,</span>
+  <span class="nx">featurePrefix</span><span class="o">:</span> <span class="s1">&#39;osm&#39;</span><span class="p">,</span>
+  <span class="nx">featureTypes</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;water_areas&#39;</span><span class="p">],</span>
+  <span class="nx">outputFormat</span><span class="o">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+  <span class="nx">filter</span><span class="o">:</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">filter</span><span class="p">.</span><span class="nx">and</span><span class="p">(</span>
+      <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">filter</span><span class="p">.</span><span class="nx">like</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;Mississippi*&#39;</span><span class="p">),</span>
+      <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">filter</span><span class="p">.</span><span class="nx">equalTo</span><span class="p">(</span><span class="s1">&#39;waterway&#39;</span><span class="p">,</span> <span class="s1">&#39;riverbank&#39;</span><span class="p">)</span>
+  <span class="p">)</span>
+<span class="p">});</span>
+
+<span class="c1">// then post the request and add the received features to a layer</span>
+<span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://ahocevar.com/geoserver/wfs&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+  <span class="nx">body</span><span class="o">:</span> <span class="k">new</span> <span class="nx">XMLSerializer</span><span class="p">().</span><span class="nx">serializeToString</span><span class="p">(</span><span class="nx">featureRequest</span><span class="p">)</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">features</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">GeoJSON</span><span class="p">().</span><span class="nx">readFeatures</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+  <span class="nx">vectorSource</span><span class="p">.</span><span class="nx">addFeatures</span><span class="p">(</span><span class="nx">features</span><span class="p">);</span>
+  <span class="nx">map</span><span class="p">.</span><span class="nx">getView</span><span class="p">().</span><span class="nx">fit</span><span class="p">(</span><span class="nx">vectorSource</span><span class="p">.</span><span class="nx">getExtent</span><span class="p">());</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>This code is fetching water features from the WFS at
+<code class="docutils literal notranslate"><span class="pre">https://ahocevar.com/geoserver/wfs</span></code>. Your task is to adapt each of
+these blocks so that they work in your code. We’ll describe what each
+portion of this example is doing, and leave the task of modifying it for
+your app up to you.</p>
+<div class="section" id="building-the-request">
+<h4>Building the Request<a class="headerlink" href="#building-the-request" title="Permalink to this headline">¶</a></h4>
+<p>A GeoServer WFS request must be made in XML format. Building up XML
+within JavaScript code would be very painful and clunky, so thankfully
+OpenLayers provides an interface for us to configure our requests using
+its JS API, and then turn a request object into XML. The first block in
+the code above builds up the request. It specifies the request
+parameters that we want to pass to GeoServer to cusomize the feature set
+we get back.</p>
+<p>Let’s look at each parameter of the call to <code class="docutils literal notranslate"><span class="pre">writeGetFeature</span></code>:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">srsName</span></code> - specifies the SRS (or coordinate system) that we want
+our data in. Recall that the SRS of our parks data is EPSG:102696.
+This is different from the SRS of our base map. Thus, you’ll need to
+ask GeoServer to convert the park data to the same SRS as the base
+map by setting the value of this paramter. Which SRS is your OSM
+basemap rendered in? Figure that out, and use the value to customize
+your own request.</li>
+<li><code class="docutils literal notranslate"><span class="pre">featureNS</span></code> - the URI of the workspace that owns the layer</li>
+<li><code class="docutils literal notranslate"><span class="pre">featurePrefix</span></code> - the name of the workspace that owns the layer</li>
+<li><code class="docutils literal notranslate"><span class="pre">featureTypes</span></code> - the name of the WFS layer</li>
+<li><code class="docutils literal notranslate"><span class="pre">outputFormat</span></code> - the format that we want the data returned in (can
+be <code class="docutils literal notranslate"><span class="pre">application/json</span></code>, <code class="docutils literal notranslate"><span class="pre">application/xml</span></code>, etc)</li>
+<li><code class="docutils literal notranslate"><span class="pre">filter</span></code> - the filter to apply to the feature set. In the example
+above, only river bank water features that start with “Mississippi”
+are returned. If you leave off the <code class="docutils literal notranslate"><span class="pre">filter</span></code> parameter, all features
+will be returned.</li>
+</ul>
+<p>For additional parameters that can be used with <code class="docutils literal notranslate"><span class="pre">GetFeature</span></code>, see the
+<a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.format.WFS.html#writeGetFeature">OpenLayers API
+documentation</a>.</p>
+<p>Add a customized version of the above GetFeature call to your app. Be
+sure to add the following import:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="nx">WFS</span> <span class="nx">from</span> <span class="s1">&#39;ol/format/wfs&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>With these, you can modify the first line to simply:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span> <span class="nx">featureRequest</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">WFS</span><span class="p">().</span><span class="nx">writeGetFeature</span><span class="p">({</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="making-the-request">
+<h4>Making the Request<a class="headerlink" href="#making-the-request" title="Permalink to this headline">¶</a></h4>
+<p>Now we will customize the second block, which looks like this:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://ahocevar.com/geoserver/wfs&#39;</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+  <span class="nx">body</span><span class="o">:</span> <span class="k">new</span> <span class="nx">XMLSerializer</span><span class="p">().</span><span class="nx">serializeToString</span><span class="p">(</span><span class="nx">featureRequest</span><span class="p">)</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">features</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">GeoJSON</span><span class="p">().</span><span class="nx">readFeatures</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+  <span class="nx">vectorSource</span><span class="p">.</span><span class="nx">addFeatures</span><span class="p">(</span><span class="nx">features</span><span class="p">);</span>
+  <span class="nx">map</span><span class="p">.</span><span class="nx">getView</span><span class="p">().</span><span class="nx">fit</span><span class="p">(</span><span class="nx">vectorSource</span><span class="p">.</span><span class="nx">getExtent</span><span class="p">());</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>In this example, a POST request is made to
+<code class="docutils literal notranslate"><span class="pre">https://ahocevar.com/geoserver/wfs</span></code> with body that contains XML
+generated from the previously configured request object. In particular,
+<code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">XMLSerializer().serializeToString(featureRequest)</span></code> creates the
+given XML.</p>
+<p>The request is first handled by this function:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">response</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+<p>which turns the response string into JSON.</p>
+<p>The next handler uses the OpenLayers API to parse the JSON object into
+GeoJSON format and extract the features. It then adds the features to
+the map. Finally, it zooms the map to fit around the given set of
+features.</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">json</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">features</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ol</span><span class="p">.</span><span class="nx">format</span><span class="p">.</span><span class="nx">GeoJSON</span><span class="p">().</span><span class="nx">readFeatures</span><span class="p">(</span><span class="nx">json</span><span class="p">);</span>
+  <span class="nx">vectorSource</span><span class="p">.</span><span class="nx">addFeatures</span><span class="p">(</span><span class="nx">features</span><span class="p">);</span>
+  <span class="nx">map</span><span class="p">.</span><span class="nx">getView</span><span class="p">().</span><span class="nx">fit</span><span class="p">(</span><span class="nx">vectorSource</span><span class="p">.</span><span class="nx">getExtent</span><span class="p">());</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>For your own code, you can make minimal modifications to this block to
+get it working. In particular, you’ll need to customize the URL for the
+request, and make sure all variable names are correct. We also recommend
+using <code class="docutils literal notranslate"><span class="pre">let</span></code> instead of <code class="docutils literal notranslate"><span class="pre">var</span></code> to create your variables. You’ll also
+likely want to remove the last line, which shifts the map view. Finally,
+you’ll need the import:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="nx">GeoJSON</span> <span class="nx">from</span> <span class="s1">&#39;ol/format/geojson&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>Which will allow you to modify the line calling <code class="docutils literal notranslate"><span class="pre">GeoJSON()</span></code>
+accordingly.</p>
+<p>Once you modify the code discussed to fit your projeject, you should see
+parks rendered on the map!</p>
+<div class="figure" id="id2">
+<img alt="Map with park features outlined" src="../_images/park-features.png" />
+<p class="caption"><span class="caption-text">Park features rendered on our map</span></p>
+</div>
+<p>Next, we’ll style the parks to look nice.</p>
+</div>
+</div>
+</div>
+<div class="section" id="styling-features">
+<h2>Styling Features<a class="headerlink" href="#styling-features" title="Permalink to this headline">¶</a></h2>
+<p>For this section, we refer you to the <a class="reference external" href="https://openlayers.org/workshop/en/vector/style.html">Making It Look
+Nice</a> section
+of the OpenLayers workshop. Add a border (i.e.&nbsp;stroke) color and fill
+color to the park features, making them look however you like.</p>
+<p>Here’s how our map looks after styling:</p>
+<div class="figure" id="id3">
+<img alt="Map with park features styled with dark green outlines and green fill color" src="../_images/park-styles.png" />
+<p class="caption"><span class="caption-text">How the map will look after adding some styles</span></p>
+</div>
+</div>
+<div class="section" id="making-it-interactive">
+<h2>Making It Interactive<a class="headerlink" href="#making-it-interactive" title="Permalink to this headline">¶</a></h2>
+<p>Now we’ll turn our attention to display park names on user click. We’ll
+largely follow the <a class="reference external" href="https://openlayers.org/workshop/en/basics/popup.html">OpenLayers workshop instructions on adding a
+popup</a>.</p>
+<p>In fact, the tasks are so similar that we’ll let you review those
+instructions and only mention the parts that are different for our case.</p>
+<p>The only modifications you’ll need to make are in the click handler,
+which we include here for reference:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>﻿﻿map.on(&#39;click&#39;, function(e) {
+  overlay.setPosition();
+  var features = map.getFeaturesAtPixel(e.pixel);
+  if (features) {
+    var coords = features[0].getGeometry().getCoordinates();
+    var hdms = coordinate.toStringHDMS(proj.toLonLat(coords));
+    overlay.getElement().innerHTML = hdms;
+    overlay.setPosition(coords);
+  }
+});
+</pre></div>
+</div>
+<div class="section" id="getting-park-names">
+<h3>Getting Park Names<a class="headerlink" href="#getting-park-names" title="Permalink to this headline">¶</a></h3>
+<p>The array of features, <code class="docutils literal notranslate"><span class="pre">features</span></code>, representes all features at the
+location that was clicked. For us, we this will only be one (there can
+be only one park at a given location). Thus, <code class="docutils literal notranslate"><span class="pre">features[0]</span></code> will be the
+park feature in question. You’ll want to put this feature in its own
+variable, and then get the properties associated with the park using its
+<code class="docutils literal notranslate"><span class="pre">getProperties</span></code> method. See the <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.Feature.html#getProperties">OpenLayers API
+docs</a>
+for usage.</p>
+<p>The park name will be one of the properties returned. Which one? Use
+<code class="docutils literal notranslate"><span class="pre">console.log</span></code> to print all of the properties to the browser JS console
+to find out. Once you know the name of the property that contains each
+park’s name, put it in the overlay.</p>
+</div>
+<div class="section" id="positioning-the-overlay">
+<h3>Positioning the Overlay<a class="headerlink" href="#positioning-the-overlay" title="Permalink to this headline">¶</a></h3>
+<p>The example code above works to position the overlay on features that
+are points. If you try to use the same positioning calls with your
+parks, which have extents (i.e.&nbsp;width and height) you’ll get some odd
+results. Let’s look at how we can position the overlay more nicely.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">getGeometry</span></code> method will get the full geometry of a feature. Use
+this method to get the geometry for the park and place it in a variable
+(and <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.Feature.html#getGeometry">read about
+it</a>).</p>
+<p>Once we have a park’s geometry, we can get its extent, which represents
+the bounding box for the park. Calling <code class="docutils literal notranslate"><span class="pre">getExtent</span></code> on the geometry
+object will return the extent in the form of an array, which looks like
+<code class="docutils literal notranslate"><span class="pre">[minx,</span> <span class="pre">miny,</span> <span class="pre">maxx,</span> <span class="pre">maxy]</span></code>, where the four values represent the
+corresponding coordinate values for the corners of the park’s bounding
+box. Put the extent in yet another variable. <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.geom.Geometry.html#getExtent">Read about the
+method</a>.</p>
+<p>Once you have the extent, you might try to position the overlay at, say,
+the top left using the <code class="docutils literal notranslate"><span class="pre">minx</span></code> and <code class="docutils literal notranslate"><span class="pre">maxy</span></code> coordinates. Try this and
+see what the results are.</p>
+<p>When you tried using the exact values of the extent, the overlay was
+rarely, if ever, positioned in a way in which it touched the given park.
+This is because the corner of the bounding box is usually outside of a
+feature’s geometry. What we really want to do is to position the overlay
+at the point on the park’s geometry that is <em>closest</em> to the top left
+corner. Thankfully, there’s a method to help us with this!</p>
+<p><code class="docutils literal notranslate"><span class="pre">getClosestPoint</span></code> can be called on a geometry object. It takes as a
+parameter a point, and it returns the point within the given geometry
+that is closest to the point paramter that it is given. <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.geom.Geometry.html#getClosestPoint">Read about the
+method</a>,
+and then use it to obtain the point within a park that is closest to the
+top left corner of its bounding box. Then, position the overlay at this
+point.</p>
+<p>When you have it working, your map will look something like this:</p>
+<div class="figure" id="id4">
+<img alt="The final application. Park features, and the name of Tower Grove Park appears next to the park after it has been clicked on." src="../_images/overlay-positioned.png" />
+<p class="caption"><span class="caption-text">Our final application</span></p>
+</div>
+<p>Congrats! Your St.&nbsp;Louis City parks map is looking great!</p>
+<p>Continue on to the <a class="reference internal" href="extending-your-app.html#extending-your-app"><span class="std std-ref">Extending Your Application</span></a> section to read about some additional ways that
+you might extend the app to continue learning about mapping
+applications, OpenLayers, and GeoServer.</p>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2018, LaunchCode.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

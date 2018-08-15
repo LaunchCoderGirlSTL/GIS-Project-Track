@@ -81,9 +81,44 @@
 <li class="toctree-l2"><a class="reference internal" href="lessons/working-with-json.html#resources">Resources</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-openlayers.html">Intro to OpenLayers</a><ul>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-geoserver.html">Introduction to GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-geoserver.html#web-services">Web Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/geoserver-setup.html">GeoServer Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/geoserver-setup.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/extending-your-app.html">Extending Your Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/extending-your-app.html#adding-controls">Adding Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
 </ul>
 </li>
 </ul>
@@ -147,6 +182,9 @@
 </div>
 <div class="section" id="lessons">
 <h2>Lessons<a class="headerlink" href="#lessons" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="front-end-development-crash-course">
+<h3>Front-End Development Crash Course<a class="headerlink" href="#front-end-development-crash-course" title="Permalink to this headline">¶</a></h3>
+<p>Before learning about GIS-specific technologies, we need to cover a few foundational concepts that will allow us to create map-based web applications.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-javascript.html">Introduction to JavaScript</a><ul>
@@ -169,12 +207,60 @@
 <li class="toctree-l2"><a class="reference internal" href="lessons/working-with-json.html#resources">Resources</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-openlayers.html">Intro to OpenLayers</a><ul>
+</ul>
+</div>
+</div>
+<div class="section" id="intro-to-openlayers">
+<h3>Intro to OpenLayers<a class="headerlink" href="#intro-to-openlayers" title="Permalink to this headline">¶</a></h3>
+<p>OpenLayers is an open-source JavaScript framework that specializes in working with maps and GIS data.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
 </ul>
 </li>
 </ul>
+</div>
+</div>
+<div class="section" id="intro-to-geoserver">
+<h3>Intro to GeoServer<a class="headerlink" href="#intro-to-geoserver" title="Permalink to this headline">¶</a></h3>
+<p>GeoServer is an open-source GIS tool that allows users to configure custom GIS data stores. We’ll learn some new GIS concepts while exploring GeoServer, and then we’ll learn how to pull data from GeoServer into an OpenLayers application.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lessons/intro-to-geoserver.html">Introduction to GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-geoserver.html#web-services">Web Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/geoserver-setup.html">GeoServer Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/geoserver-setup.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lessons/extending-your-app.html">Extending Your Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lessons/extending-your-app.html#adding-controls">Adding Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lessons/extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="appendices">

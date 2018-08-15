@@ -1,5 +1,7 @@
-Intro to OpenLayers
-===================
+.. _intro-to-openlayers:
+
+Introduction to OpenLayers
+==========================
 
 OpenLayers is an open-source JS library that provides tools for rendering and interacting with GIS data in the browser. You'll apply the learning on JavaScript from the last few lessons as you go through the official OpenLayers Workshop.
 
@@ -34,7 +36,7 @@ Go through the `OpenLayers Workshop <https://openlayers.org/workshop/en/>`_ at y
 Notes
 #####
 
-* As you're getting started on the tutorial, initialize the project directory as a Git repository. Commit your work at the end of each section.
+* As you're getting started on the tutorial, initialize the project directory as a Git repository (if you're familiar with Git). Commit your work at the end of each section.
 
 * As you work through the workshop, you should **not** copy/paste the code. It can be tempting, but typing the code given by the workshop will give you a chance to think more fully about the classes and utilities being introduced, and they will "sink in" more fully.
 
