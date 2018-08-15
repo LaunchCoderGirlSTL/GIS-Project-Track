@@ -48,6 +48,7 @@ GeoServer is an open-source GIS tool that allows users to configure custom GIS d
    :maxdepth: 2
 
    lessons/intro-to-geoserver
+   lessons/geoserver-setup
    lessons/publishing-data-in-geoserver
    lessons/rendering-data-in-openlayers
    lessons/extending-your-app

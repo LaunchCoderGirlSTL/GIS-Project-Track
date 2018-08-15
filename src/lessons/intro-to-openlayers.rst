@@ -1,5 +1,7 @@
-Intro to OpenLayers
-===================
+.. _intro-to-openlayers:
+
+Introduction to OpenLayers
+==========================
 
 OpenLayers is an open-source JS library that provides tools for rendering and interacting with GIS data in the browser. You'll apply the learning on JavaScript from the last few lessons as you go through the official OpenLayers Workshop.
 
