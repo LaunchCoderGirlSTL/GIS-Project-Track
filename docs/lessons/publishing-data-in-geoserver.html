@@ -205,7 +205,7 @@ VirtualBox.</p>
 <p>For GeoServer to be able to use the shapefile, it must be placed within
 GeoServer’s data directory. Where is this directory? Our GeoServer VM is
 helpful enough to tell us when we log into it:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
 Last login: Tue Mar 13 19:33:00 2018 from 10.0.2.2
 ======================================================================
 Welcome! This virtual machine is designed for use with the following
@@ -249,11 +249,11 @@ the VM using <code class="docutils literal notranslate"><span class="pre">ssh</s
 prepend the commands with sudo since our VM user doesn’t have permission
 to write to the destination directory. Also recall that the password on
 the VM is empty (i.e.&nbsp;just press Enter when prompted for a password).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ sudo mv /media/sf_share/parks.zip /var/opt/boundless/suite/geoserver/data
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ sudo mv /media/sf_share/parks.zip /var/opt/boundless/suite/geoserver/data
 </pre></div>
 </div>
 <p>Then go to this directory and unzip the file.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ cd /var/opt/boundless/suite/geoserver/data
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ cd /var/opt/boundless/suite/geoserver/data
 training@boundless:/var/opt/boundless/suite/geoserver/data$ sudo unzip parks.zip -d stl-parks
 Archive:  parks.zip
   inflating: stl-parks/parks.dbf
@@ -325,20 +325,20 @@ GeoServer.</p>
 documentation</a>.</p>
 <p>If you don’t have a terminal open and logged in to your GeoServer VM, do
 so now:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
 </pre></div>
 </div>
 <p>Recall that the password is empty.</p>
 <p>Once logged into your GeoServer VM, go to the data directory:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ cd /var/opt/boundless/suite/geoserver/data
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>training@boundless:~$ cd /var/opt/boundless/suite/geoserver/data
 </pre></div>
 </div>
 <p>From here, descend one more directory into <code class="docutils literal notranslate"><span class="pre">user_projections</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:/var/opt/boundless/suite/geoserver/data$ cd user_projections/
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>training@boundless:/var/opt/boundless/suite/geoserver/data$ cd user_projections/
 </pre></div>
 </div>
 <p>Open the file <code class="docutils literal notranslate"><span class="pre">epsg.properties</span></code> for editing in the text editor nano:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>training@boundless:/var/opt/boundless/suite/geoserver/data/user_projections$ sudo nano epsg.properties
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>training@boundless:/var/opt/boundless/suite/geoserver/data/user_projections$ sudo nano epsg.properties
 </pre></div>
 </div>
 <p>Use the down arrow key to navigate to the end of the file. We’ll add the
@@ -353,7 +353,7 @@ and copy the GeoServer version of the coordinate system.</p>
 paste in the definition. Then use <code class="docutils literal notranslate"><span class="pre">ctrl+X</span></code> to quit nano, select “Yes”
 when asked if you want to save the file.</p>
 <p>To finish up, we need to restart GeoServer:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo service tomcat8 stop
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ sudo service tomcat8 stop
 [sudo] password for training:
 Stopping tomcat8:  *
 $ sudo service tomcat8 start
@@ -412,10 +412,15 @@ correct.</p>
     <p class="pull-right">
       <a href="#">Back to top</a>
       
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/lessons/publishing-data-in-geoserver.rst.txt"
+     rel="nofollow">Page Source</a>
+</div>
+      
     </p>
     <p>
-        &copy; Copyright 2018, LaunchCode.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
     </p>
   </div>
 </footer>

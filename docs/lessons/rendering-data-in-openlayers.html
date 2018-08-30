@@ -260,13 +260,13 @@ configuration.</p>
 <p>From a terminal, SSH into your GeoServer VM:
 <code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">-p</span> <span class="pre">2020</span> <span class="pre">training&#64;localhost</span></code>. From there, go to the directory for
 GeoServer, and then into the WEB-INF subdirectory.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd /opt/boundless/suite/geoserver/
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ cd /opt/boundless/suite/geoserver/
 $ cd WEB-INF
 </pre></div>
 </div>
 <p>This directory contains a file, <code class="docutils literal notranslate"><span class="pre">web.xml</span></code>, that configures the
 GeoServer application. Open the file with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo nano web.xml
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ sudo nano web.xml
 </pre></div>
 </div>
 <p>Move your cursor to a blank line just inside the <code class="docutils literal notranslate"><span class="pre">&lt;web-app&gt;</span></code> tag (you
@@ -289,7 +289,7 @@ but it’s fine for local development.</p>
 if you want to save your changes. For the changes to take effect, we
 need to restart the Tomcat server (i.e.&nbsp;the application server running
 GeoServer).</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ sudo service tomcat8 stop
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ sudo service tomcat8 stop
 $ sudo service tomcat8 start
 </pre></div>
 </div>
@@ -499,7 +499,7 @@ popup</a>.</p>
 instructions and only mention the parts that are different for our case.</p>
 <p>The only modifications you’ll need to make are in the click handler,
 which we include here for reference:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>﻿﻿map.on(&#39;click&#39;, function(e) {
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>﻿﻿map.on(&#39;click&#39;, function(e) {
   overlay.setPosition();
   var features = map.getFeaturesAtPixel(e.pixel);
   if (features) {
@@ -582,10 +582,15 @@ applications, OpenLayers, and GeoServer.</p>
     <p class="pull-right">
       <a href="#">Back to top</a>
       
+        <br/>
+        
+<div id="sourcelink">
+  <a href="../_sources/lessons/rendering-data-in-openlayers.rst.txt"
+     rel="nofollow">Page Source</a>
+</div>
+      
     </p>
     <p>
-        &copy; Copyright 2018, LaunchCode.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.<br/>
     </p>
   </div>
 </footer>
