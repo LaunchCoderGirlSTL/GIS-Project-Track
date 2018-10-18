@@ -366,7 +366,7 @@ Making It Interactive
 
 Now we’ll turn our attention to display park names on user click. We’ll
 largely follow the `OpenLayers workshop instructions on adding a
-popup <https://openlayers.org/workshop/en/basics/popup.html>`__.
+popup <https://openlayers.org/workshop/en/vectortile/interact.html>`__.
 
 In fact, the tasks are so similar that we’ll let you review those
 instructions and only mention the parts that are different for our case.
