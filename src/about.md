@@ -1,0 +1,5 @@
+# About This Curriculum
+
+Copyright © 2018 LaunchCode
+
+This content was created by LaunchCode for use in its education programs.
