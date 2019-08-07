@@ -7,12 +7,13 @@
     <title>Rendering Data In OpenLayers &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
           GIS Project Track</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -55,92 +56,32 @@
      href="../index.html">Pages <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
-</ul>
-</li>
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
-</ul>
-</li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#web-services">Web Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Rendering Data In OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#adding-a-base-map">Adding a Base Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fetching-parks-data">Fetching Parks Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#styling-features">Styling Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#making-it-interactive">Making It Interactive</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
-</ul>
-</li>
-</ul>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a></li>
+</ol>
+<ol class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
+</ol>
 </ul>
 </li>
               
@@ -155,7 +96,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -207,7 +149,7 @@ tutorial. In a seperate terminal window, go ahead and build and serve
 the project with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">start</span></code>.</p>
 <p>Create a new folder at the top level of the project named <code class="docutils literal notranslate"><span class="pre">data</span></code>.
 Create a new file in data named <code class="docutils literal notranslate"><span class="pre">osm-basemap.json</span></code>. Copy/paste the
-<a class="reference external" href="https://gist.github.com/chrisbay/9adf9b57611fa1806d2c1dffa65f1df0">contents</a>
+<a class="reference external" href="https://gist.github.com/chrisbay/9adf9b57611fa1806d2c1dffa65f1df0" target="_blank">contents<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 of our <code class="docutils literal notranslate"><span class="pre">osm-basemap.json</span></code> file and save. This file is derived from the
 <code class="docutils literal notranslate"><span class="pre">bright.json</span></code> file that you worked with on the OpenLayers Workshop,
 with a bit of customization. We’ve removed several unneeded layers to
@@ -227,7 +169,7 @@ or scaling.</p>
 <span class="kr">const</span> <span class="nx">map</span> <span class="o">=</span> <span class="nx">apply</span><span class="p">(</span><span class="s1">&#39;map-container&#39;</span><span class="p">,</span> <span class="s1">&#39;./data/osm-basemap.json&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
-<p>Visit <a class="reference external" href="http://localhost:3000/">localhost:3000</a> in your browser and
+<p>Visit <a class="reference external" href="http://localhost:3000/" target="_blank">localhost:3000<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> in your browser and
 you should see something like the following.</p>
 <div class="figure" id="id1">
 <img alt="The OpenStreetMaps base map centered on St. Louis" src="../_images/basemap.png" />
@@ -250,8 +192,8 @@ accessing resources they shouldn’t have access to. Most servers disable
 CORS to some degree (or entirely). Resource sharing can be enabled
 at-large (for requests from any origin) or on a case-by-case basis (only
 for some origins).</p>
-<p>We encourage you to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">read more about
-CORS</a>, as it
+<p>We encourage you to <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" target="_blank">read more about
+CORS<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, as it
 is an essential topic for anybody doing front-end development.</p>
 <p>If you were to try to access data from GeoServer (hosted at
 <code class="docutils literal notranslate"><span class="pre">localhost:8080</span></code>) via your OpenLayers/JavaScript app (hosted at
@@ -305,9 +247,9 @@ your OpenLayers app with no CORS errors.</p>
 <div class="section" id="fetching-parks-data">
 <h2>Fetching Parks Data<a class="headerlink" href="#fetching-parks-data" title="Permalink to this headline">¶</a></h2>
 <p>For these last sections, we leave some details to you to figure out.
-Refer to the <a class="reference external" href="https://openlayers.org/workshop/en/">OpenLayers
-Workshop</a> and the <a class="reference external" href="http://openlayers.org/en/latest/apidoc/index.html">OpenLayers
-API</a> whenever get
+Refer to the <a class="reference external" href="https://openlayers.org/workshop/en/" target="_blank">OpenLayers
+Workshop<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> and the <a class="reference external" href="http://openlayers.org/en/latest/apidoc/index.html" target="_blank">OpenLayers
+API<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> whenever get
 stuck or need more info. Everything we’ll ask you to do will either have
 been covered in the workshop, or will be covered in another related
 resource that we’ll provide.</p>
@@ -342,8 +284,8 @@ a layer, there are not features in the layer to display!</p>
 </div>
 <div class="section" id="populaing-the-layer">
 <h3>Populaing the Layer<a class="headerlink" href="#populaing-the-layer" title="Permalink to this headline">¶</a></h3>
-<p>We’ll follow the <a class="reference external" href="https://openlayers.org/en/latest/examples/vector-wfs-getfeature.html">WFS - GetFeature
-demo</a>
+<p>We’ll follow the <a class="reference external" href="https://openlayers.org/en/latest/examples/vector-wfs-getfeature.html" target="_blank">WFS - GetFeature
+demo<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 provided by OpenLayers. Have a look at this code and try to decipher
 what it is doing before continuing on here. Note that the code is
 structured to be embedded in an HTML file, rather than in a separate JS
@@ -412,8 +354,8 @@ are returned. If you leave off the <code class="docutils literal notranslate"><s
 will be returned.</li>
 </ul>
 <p>For additional parameters that can be used with <code class="docutils literal notranslate"><span class="pre">GetFeature</span></code>, see the
-<a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.format.WFS.html#writeGetFeature">OpenLayers API
-documentation</a>.</p>
+<a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.format.WFS.html#writeGetFeature" target="_blank">OpenLayers API
+documentation<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>Add a customized version of the above GetFeature call to your app. Be
 sure to add the following import:</p>
 <div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="nx">WFS</span> <span class="nx">from</span> <span class="s1">&#39;ol/format/wfs&#39;</span><span class="p">;</span>
@@ -485,8 +427,8 @@ parks rendered on the map!</p>
 </div>
 <div class="section" id="styling-features">
 <h2>Styling Features<a class="headerlink" href="#styling-features" title="Permalink to this headline">¶</a></h2>
-<p>For this section, we refer you to the <a class="reference external" href="https://openlayers.org/workshop/en/vector/style.html">Making It Look
-Nice</a> section
+<p>For this section, we refer you to the <a class="reference external" href="https://openlayers.org/workshop/en/vector/style.html" target="_blank">Making It Look
+Nice<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> section
 of the OpenLayers workshop. Add a border (i.e.&nbsp;stroke) color and fill
 color to the park features, making them look however you like.</p>
 <p>Here’s how our map looks after styling:</p>
@@ -498,8 +440,8 @@ color to the park features, making them look however you like.</p>
 <div class="section" id="making-it-interactive">
 <h2>Making It Interactive<a class="headerlink" href="#making-it-interactive" title="Permalink to this headline">¶</a></h2>
 <p>Now we’ll turn our attention to display park names on user click. We’ll
-largely follow the <a class="reference external" href="https://openlayers.org/workshop/en/vectortile/interact.html">OpenLayers workshop instructions on adding a
-popup</a>.</p>
+largely follow the <a class="reference external" href="https://openlayers.org/workshop/en/vectortile/interact.html" target="_blank">OpenLayers workshop instructions on adding a
+popup<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>In fact, the tasks are so similar that we’ll let you review those
 instructions and only mention the parts that are different for our case.</p>
 <p>The only modifications you’ll need to make are in the click handler,
@@ -523,8 +465,8 @@ location that was clicked. For us, we this will only be one (there can
 be only one park at a given location). Thus, <code class="docutils literal notranslate"><span class="pre">features[0]</span></code> will be the
 park feature in question. You’ll want to put this feature in its own
 variable, and then get the properties associated with the park using its
-<code class="docutils literal notranslate"><span class="pre">getProperties</span></code> method. See the <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.Feature.html#getProperties">OpenLayers API
-docs</a>
+<code class="docutils literal notranslate"><span class="pre">getProperties</span></code> method. See the <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.Feature.html#getProperties" target="_blank">OpenLayers API
+docs<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
 for usage.</p>
 <p>The park name will be one of the properties returned. Which one? Use
 <code class="docutils literal notranslate"><span class="pre">console.log</span></code> to print all of the properties to the browser JS console
@@ -539,15 +481,15 @@ parks, which have extents (i.e.&nbsp;width and height) you’ll get some odd
 results. Let’s look at how we can position the overlay more nicely.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">getGeometry</span></code> method will get the full geometry of a feature. Use
 this method to get the geometry for the park and place it in a variable
-(and <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.Feature.html#getGeometry">read about
-it</a>).</p>
+(and <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.Feature.html#getGeometry" target="_blank">read about
+it<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>).</p>
 <p>Once we have a park’s geometry, we can get its extent, which represents
 the bounding box for the park. Calling <code class="docutils literal notranslate"><span class="pre">getExtent</span></code> on the geometry
 object will return the extent in the form of an array, which looks like
 <code class="docutils literal notranslate"><span class="pre">[minx,</span> <span class="pre">miny,</span> <span class="pre">maxx,</span> <span class="pre">maxy]</span></code>, where the four values represent the
 corresponding coordinate values for the corners of the park’s bounding
-box. Put the extent in yet another variable. <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.geom.Geometry.html#getExtent">Read about the
-method</a>.</p>
+box. Put the extent in yet another variable. <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.geom.Geometry.html#getExtent" target="_blank">Read about the
+method<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>Once you have the extent, you might try to position the overlay at, say,
 the top left using the <code class="docutils literal notranslate"><span class="pre">minx</span></code> and <code class="docutils literal notranslate"><span class="pre">maxy</span></code> coordinates. Try this and
 see what the results are.</p>
@@ -559,8 +501,8 @@ at the point on the park’s geometry that is <em>closest</em> to the top left
 corner. Thankfully, there’s a method to help us with this!</p>
 <p><code class="docutils literal notranslate"><span class="pre">getClosestPoint</span></code> can be called on a geometry object. It takes as a
 parameter a point, and it returns the point within the given geometry
-that is closest to the point paramter that it is given. <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.geom.Geometry.html#getClosestPoint">Read about the
-method</a>,
+that is closest to the point paramter that it is given. <a class="reference external" href="http://openlayers.org/en/latest/apidoc/ol.geom.Geometry.html#getClosestPoint" target="_blank">Read about the
+method<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>,
 and then use it to obtain the point within a park that is closest to the
 top left corner of its bounding box. Then, position the overlay at this
 point.</p>

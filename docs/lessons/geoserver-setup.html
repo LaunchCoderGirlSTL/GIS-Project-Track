@@ -7,12 +7,13 @@
     <title>GeoServer Setup &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
           GIS Project Track</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -55,92 +56,32 @@
      href="../index.html">Pages <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
-</ul>
-</li>
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
-</ul>
-</li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#web-services">Web Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">GeoServer Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
-</ul>
-</li>
-</ul>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a></li>
+</ol>
+<ol class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GeoServer Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
+</ol>
 </ul>
 </li>
               
@@ -155,7 +96,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -196,11 +138,11 @@
 <p>We will be working with a GeoServer instance that has been set up for you inside of a virtual machine. This will minimize the amount of installation and configuration, while provide the same basic setup for all students, regardless of operating system.</p>
 <div class="section" id="virtualbox">
 <h3>VirtualBox<a class="headerlink" href="#virtualbox" title="Permalink to this headline">¶</a></h3>
-<p>If you don’t have it already installed, install VirtualBox by finding the package specific to your operating system on the <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">VirtualBox downloads page</a>.</p>
+<p>If you don’t have it already installed, install VirtualBox by finding the package specific to your operating system on the <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads" target="_blank">VirtualBox downloads page<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
 <div class="section" id="vm-installation">
 <h3>VM Installation<a class="headerlink" href="#vm-installation" title="Permalink to this headline">¶</a></h3>
-<p>Download the <a class="reference external" href="https://www.dropbox.com/s/tioi1tp7dn8irak/GeoServer%20%2864%20bit%29.ova?dl=0">GeoServer virtual machine image</a>. Double-click on the downloaded file to set up the image in VirtualBox.</p>
+<p>Download the <a class="reference external" href="https://www.dropbox.com/s/tioi1tp7dn8irak/GeoServer%20%2864%20bit%29.ova?dl=0" target="_blank">GeoServer virtual machine image<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. Double-click on the downloaded file to set up the image in VirtualBox.</p>
 </div>
 <div class="section" id="accessing-geoserver">
 <h3>Accessing GeoServer<a class="headerlink" href="#accessing-geoserver" title="Permalink to this headline">¶</a></h3>
@@ -213,7 +155,7 @@
 <p class="caption"><span class="caption-text">Starting the virtual machine in headless mode</span></p>
 </div>
 <ol class="arabic simple" start="2">
-<li>In a web browser, navigate to <a class="reference external" href="http://localhost:8080/geoserver">localhost:8080/geoserver</a>.</li>
+<li>In a web browser, navigate to <a class="reference external" href="http://localhost:8080/geoserver" target="_blank">localhost:8080/geoserver<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</li>
 <li>Using the username / password combo of <strong>admin / geoserver</strong>, log in to the GeoServer admin panel.</li>
 </ol>
 <p>You will repeat these steps whenever you want to work with GeoServer.</p>
@@ -229,7 +171,7 @@
 <p>The next few lessons demonstrate how to use GeoServer and OpenLayers together to create dynamic, interactive mapping applications. It assumes that you have completed all prior lessons, including <a class="reference internal" href="intro-to-openlayers.html#intro-to-openlayers"><span class="std std-ref">Introduction to OpenLayers</span></a> and <a class="reference internal" href="intro-to-geoserver.html#intro-to-geoserver"><span class="std std-ref">Introduction to GeoServer</span></a>.</p>
 <div class="section" id="the-project">
 <h3>The Project<a class="headerlink" href="#the-project" title="Permalink to this headline">¶</a></h3>
-<p>We will use a data set published by the <a class="reference external" href="https://www.stlouis-mo.gov/data/">City of St. Louis Open Data</a> project to render St. Louis City parks on a map. The end result will look something like this, displaying park names when the user clicks on a given park.</p>
+<p>We will use a data set published by the <a class="reference external" href="https://www.stlouis-mo.gov/data/" target="_blank">City of St. Louis Open Data<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> project to render St. Louis City parks on a map. The end result will look something like this, displaying park names when the user clicks on a given park.</p>
 <div class="figure" id="id4">
 <img alt="Screenshot of a web application displaying a map of St. Louis parks" src="../_images/stl-parks.png" />
 <p class="caption"><span class="caption-text">The St. Louis Parks app, using GeoServer and OpenLayers</span></p>

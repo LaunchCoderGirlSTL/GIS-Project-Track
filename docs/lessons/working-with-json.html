@@ -7,12 +7,13 @@
     <title>Working With JSON &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
           GIS Project Track</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -55,92 +56,32 @@
      href="../index.html">Pages <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
-</ul>
-</li>
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With JSON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#studio-cities">Studio: Cities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#web-services">Web Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
-</ul>
-</li>
-</ul>
+</ol>
+<ol class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working With JSON</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
+</ol>
 </ul>
 </li>
               
@@ -155,7 +96,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -211,7 +153,7 @@
 <h2>Getting Ready<a class="headerlink" href="#getting-ready" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="what-is-json">
 <h3>What is JSON?<a class="headerlink" href="#what-is-json" title="Permalink to this headline">¶</a></h3>
-<p>Read the article, <a class="reference external" href="https://www.elated.com/articles/json-basics/">JSON Basics: What You Need to Know</a> and answer the following questions as you go. Skip the last section, “How to work with JSON using both JavaScript and PHP.”</p>
+<p>Read the article, <a class="reference external" href="https://www.elated.com/articles/json-basics/" target="_blank">JSON Basics: What You Need to Know<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> and answer the following questions as you go. Skip the last section, “How to work with JSON using both JavaScript and PHP.”</p>
 <ul class="simple">
 <li>What data type must JSON keys be?</li>
 <li>What date types are valid for use as JSON keys?</li>
@@ -220,7 +162,7 @@
 </div>
 <div class="section" id="what-is-geojson">
 <h3>What is GeoJSON?<a class="headerlink" href="#what-is-geojson" title="Permalink to this headline">¶</a></h3>
-<p>Read the <a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON">Wikipedia article on GeoJSON</a>, answering the following questions as you go.</p>
+<p>Read the <a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank">Wikipedia article on GeoJSON<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, answering the following questions as you go.</p>
 <ul class="simple">
 <li>What is the relationship of GeoJSON to JSON?</li>
 <li>What are the four types of geographic features that can be represented in GeoJSON?</li>
@@ -231,8 +173,8 @@
 <div class="section" id="studio-cities">
 <h2>Studio: Cities<a class="headerlink" href="#studio-cities" title="Permalink to this headline">¶</a></h2>
 <p>In this studio, you will build a web page that pulls in data on the largest cities in the United States, and dynamically render the data in an HTML table. The data will be in the GeoJSON format, with the latitude/longitude coordinates of the city represented as Point features.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
 <p class="last">While we provide several code snippets for you below, you should <em>not</em> copy/paste them into your file unless we explicitly instruct you to do so. Writing the code yourself provides an opportunity for you to fully understand what each and every line is doing.</p>
 </div>
 <div class="section" id="setup">
@@ -251,11 +193,11 @@
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </pre></div>
 </div>
-<p>Now we will set up our cities data JSON file. Visit <a class="reference external" href="https://gist.github.com/chrisbay/8a7c0b44806ff08d1d9f867cddc959c3">this page</a> and click on the <em>Download ZIP</em> button. When the file finished downloading, open the ZIP file to find a directory containing <code class="docutils literal notranslate"><span class="pre">cities.json</span></code>. Move this file to the same directory as your HTML file.</p>
+<p>Now we will set up our cities data JSON file. Visit <a class="reference external" href="https://gist.github.com/chrisbay/8a7c0b44806ff08d1d9f867cddc959c3" target="_blank">this page<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> and click on the <em>Download ZIP</em> button. When the file finished downloading, open the ZIP file to find a directory containing <code class="docutils literal notranslate"><span class="pre">cities.json</span></code>. Move this file to the same directory as your HTML file.</p>
 <p>Spend a minute inspecting the <code class="docutils literal notranslate"><span class="pre">cities.json</span></code> file. Notice that it contains a single JS variable, <code class="docutils literal notranslate"><span class="pre">data</span></code>, that is a GeoJSON string. Since the string is very long and broken across multiple lines, each line ends with a <code class="docutils literal notranslate"><span class="pre">\</span></code> character to “escape” the newline. Omitting one of these characters would produce a JS error when loading the file.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">JSON data will more often be structured as plain text, and not a JS string. By that, we mean it will usually look like <a class="reference external" href="https://gist.githubusercontent.com/chrisbay/76f5ec738e5c7c79890bb532cb9a0d65/raw/a913019c2472a482b857244848865bc1041d3b9b/cities.json">this</a>. To work with such a file would require us to introduce the concept of web (or AJAX) requests, which we want to avoid at this point.</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">JSON data will more often be structured as plain text, and not a JS string. By that, we mean it will usually look like <a class="reference external" href="https://gist.githubusercontent.com/chrisbay/76f5ec738e5c7c79890bb532cb9a0d65/raw/a913019c2472a482b857244848865bc1041d3b9b/cities.json" target="_blank">this<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>. To work with such a file would require us to introduce the concept of web (or AJAX) requests, which we want to avoid at this point.</p>
 </div>
 <p>Notice that the data contains a single <code class="docutils literal notranslate"><span class="pre">FeatureCollection</span></code> that has several US cities as its features. What data do we have about each city?</p>
 </div>
@@ -286,8 +228,8 @@
 </pre></div>
 </div>
 <p>Open your <code class="docutils literal notranslate"><span class="pre">index.html</span></code> file in a web browser, and then open up the dev tools (right-click &gt; <em>Inspect Element</em>, or <em>Tools &gt; Web Developer &gt; Toggle Tools</em> on Firefox). Look at the console. Do you see any data?</p>
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-lightbulb" aria-hidden="true"></i>Tip</p>
 <p class="last">It’s possible that you will see an error in your console. This means that you’ve missed some syntax in one of the previous steps. Read the error, and back up to correct your code.</p>
 </div>
 <p>Spoiler alert: No! There is nothing has been logged to the console. This is because we still haven’t called the <code class="docutils literal notranslate"><span class="pre">renderTable</span></code> function from anywhere in our page. Let’s do that now.</p>
@@ -296,8 +238,8 @@
 </pre></div>
 </div>
 <p>Now, when we load the page the <code class="docutils literal notranslate"><span class="pre">renderTable</span></code> function will be called when the body element is finished loading. More precisely, in JS-speak, the body’s <code class="docutils literal notranslate"><span class="pre">onload</span></code> event will fire, at which point the JS snippet <code class="docutils literal notranslate"><span class="pre">renderTable()</span></code> will be executed.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
 <p class="last">If you omit the parens, and put simply <code class="docutils literal notranslate"><span class="pre">onload=&quot;renderTable&quot;</span></code>, the function will not be called. Why?</p>
 </div>
 <p>Reload your page, and you should now see the cities GeoJSON object logged to the console. Spend a minute inspecting it. What does the structure look like? Note how the JSON syntax in the original string within <code class="docutils literal notranslate"><span class="pre">cities.json</span></code> was translated directly to JS objects, arrays, strings, etc.</p>
@@ -368,22 +310,22 @@
 <div class="section" id="adding-data">
 <h3>Adding Data<a class="headerlink" href="#adding-data" title="Permalink to this headline">¶</a></h3>
 <p>There are 9 cities in our table now. Let’s add another, so that we have the 10 largest cities represented. Go to Wikipedia and find info on the 10th largest city in the US, and add the data for this city to <code class="docutils literal notranslate"><span class="pre">cities.json</span></code>.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Warning</p>
 <p class="last">Be mindful of the syntax details when adding another city to the GeoJSON structure. There are lots of little ways that we can get the syntax wrong: Leaving off a comma after an array entry, forgetting to escape the end of each line with <code class="docutils literal notranslate"><span class="pre">\</span></code>, and so on. If your syntax in <code class="docutils literal notranslate"><span class="pre">cities.json</span></code> is off, you’ll see an error message in the console with the specific line number of the error.</p>
 </div>
 <p>Reload the page, and you’ll see the new city listed at the bottom. Notice how to add new data to our page, we didn’t have to touch any code in <code class="docutils literal notranslate"><span class="pre">index.html</span></code>. Pretty cool, huh? We could continue on in this way, adding more and more data. Since the data is external to the web page, it’s easy to add more.</p>
 </div>
 <div class="section" id="bonus-mission">
 <h3>Bonus Mission<a class="headerlink" href="#bonus-mission" title="Permalink to this headline">¶</a></h3>
-<p>If you finish up the tasks above and have some energy to spare, add some <a class="reference external" href="https://www.w3schools.com/Css/css_table.asp">CSS styles to your table</a> to make it look nicer, and more readable.</p>
+<p>If you finish up the tasks above and have some energy to spare, add some <a class="reference external" href="https://www.w3schools.com/Css/css_table.asp" target="_blank">CSS styles to your table<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> to make it look nicer, and more readable.</p>
 </div>
 </div>
 <div class="section" id="resources">
 <h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://www.w3schools.com/js/js_json_intro.asp">w3c JSON Tutorial</a> - An accessible yet in-depth tutorial on JSON.</p>
-<p><a class="reference external" href="http://geojson.io/#">geojson.io</a> - An interactive web app that can generate GeoJSON based on features that you draw on a map.</p>
-<p><a class="reference external" href="http://geojson.org/">geojson.org</a> - The official specification for GeoJSON.</p>
+<p><a class="reference external" href="https://www.w3schools.com/js/js_json_intro.asp" target="_blank">w3c JSON Tutorial<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - An accessible yet in-depth tutorial on JSON.</p>
+<p><a class="reference external" href="http://geojson.io/#" target="_blank">geojson.io<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - An interactive web app that can generate GeoJSON based on features that you draw on a map.</p>
+<p><a class="reference external" href="http://geojson.org/" target="_blank">geojson.org<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> - The official specification for GeoJSON.</p>
 </div>
 </div>
 

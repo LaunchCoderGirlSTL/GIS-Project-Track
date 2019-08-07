@@ -7,12 +7,13 @@
     <title>Introduction to GeoServer &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
           GIS Project Track</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -55,92 +56,32 @@
      href="../index.html">Pages <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
-</ul>
-</li>
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
-</ul>
-</li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#web-services">Web Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#wms-and-wfs">WMS and WFS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordinate-systems">Coordinate Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
-</ul>
-</li>
-</ul>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a></li>
+</ol>
+<ol class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
+</ol>
 </ul>
 </li>
               
@@ -155,7 +96,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -183,17 +125,17 @@
       
   <div class="section" id="introduction-to-geoserver">
 <span id="intro-to-geoserver"></span><h1>Introduction to GeoServer<a class="headerlink" href="#introduction-to-geoserver" title="Permalink to this headline">¶</a></h1>
-<p>Up to this point, we have been working with OpenLayers applications that use data provided by others. This limits what we’re able to do. The ability to create and customize our own GIS data sources is a key skill in building GIS applications. <a class="reference external" href="http://geoserver.org/">GeoServer</a> is an open-source application that will enable us to do just that.</p>
+<p>Up to this point, we have been working with OpenLayers applications that use data provided by others. This limits what we’re able to do. The ability to create and customize our own GIS data sources is a key skill in building GIS applications. <a class="reference external" href="http://geoserver.org/" target="_blank">GeoServer<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> is an open-source application that will enable us to do just that.</p>
 <p>Before diving in and learning how to use GeoServer, let’s first explore some concepts that are critical for understanding how GeoServer works.</p>
 <div class="section" id="web-services">
 <h2>Web Services<a class="headerlink" href="#web-services" title="Permalink to this headline">¶</a></h2>
 <p>The primary feature of GeoServer is to provide a means of easily creating web services that provide access to GIS data. What is a web service? We’re about to find out.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p class="last">The terms “web service” and “API” can have slightly different meanings in some contexts, but are also often used interchangeably. We will do this as well. For us, a web service and an API will be the same thing.</p>
 </div>
 <p>Read the linked articles, answering the questions provided as you go.</p>
-<p><a class="reference external" href="https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82">What is an API? In English, please.</a></p>
+<p><a class="reference external" href="https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82" target="_blank">What is an API? In English, please.<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>This is a general introduction to the concept of an API.</p>
 <ul class="simple">
 <li>What is the protocol used to access and API?</li>
@@ -201,20 +143,20 @@
 <li>What type of data does an API often return in response to a request?</li>
 <li>Can an application use more than one API?</li>
 </ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">There is one common data format often provided by APIs that is not mentioned in the article: <a class="reference external" href="https://en.wikipedia.org/wiki/XML">XML</a>.</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">There is one common data format often provided by APIs that is not mentioned in the article: <a class="reference external" href="https://en.wikipedia.org/wiki/XML" target="_blank">XML<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
-<p><a class="reference external" href="http://workshops.boundlessgeo.com/geoserver-intro/overview/index.html#geoserver-overview">Introduction to GeoServer: Server Basics</a></p>
+<p><a class="reference external" href="http://workshops.boundlessgeo.com/geoserver-intro/overview/index.html#geoserver-overview" target="_blank">Introduction to GeoServer: Server Basics<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <p>This reading includes some information a bit more specific to how GeoServer acts as a web service.</p>
 <ul class="simple">
 <li>What are the two protocols that GeoServer uses to deliver map data? (We’ll learn more about each of these in a bit.)</li>
 <li>What is the name of the company that created and owns ArcGIS, an alternative to GeoServer?</li>
 <li>Among the several GIS file types listed as being supported by GeoServer, find at least one vector file type and one raster file type.</li>
 </ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">You will find <a class="reference external" href="http://wiki.gis.com/wiki/index.php/Main_Page">wiki.gis.com</a> useful in your research. If you need a refresher on what vector and raster mean, you’ll also find that here.</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">You will find <a class="reference external" href="http://wiki.gis.com/wiki/index.php/Main_Page" target="_blank">wiki.gis.com<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> useful in your research. If you need a refresher on what vector and raster mean, you’ll also find that here.</p>
 </div>
 <ul class="simple">
 <li>Which organization is responsible for defining the WMS and WFS protocals?</li>
@@ -223,18 +165,18 @@
 <div class="section" id="wms-and-wfs">
 <h2>WMS and WFS<a class="headerlink" href="#wms-and-wfs" title="Permalink to this headline">¶</a></h2>
 <p>Read the following brief overviews of the Web Map Service (WMS) and Web Feature Service (WFS) protocols. These contain some technical terms that may be new to you, so focus on the high-level question of: What type of data does each service provide?</p>
-<p><a class="reference external" href="http://workshops.boundlessgeo.com/geoserver-intro/overview/wms.html">Introduction to GeoServer: Web Map Service (WMS)</a></p>
-<p><a class="reference external" href="http://workshops.boundlessgeo.com/geoserver-intro/overview/wfs.html">Introduction to GeoServer: Web Feature Service (WFS)</a></p>
+<p><a class="reference external" href="http://workshops.boundlessgeo.com/geoserver-intro/overview/wms.html" target="_blank">Introduction to GeoServer: Web Map Service (WMS)<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+<p><a class="reference external" href="http://workshops.boundlessgeo.com/geoserver-intro/overview/wfs.html" target="_blank">Introduction to GeoServer: Web Feature Service (WFS)<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
 <div class="admonition-example admonition">
-<p class="first admonition-title">Example</p>
-<p class="last">Open the <a class="reference external" href="https://www.google.com/maps/search/restaurants/&#64;38.6565286,-90.3064753,13z/data=!3m1!4b1!4m8!2m7!3m6!1srestaurants!2sLaunchCode+Mentor+Center,+4811+Delmar+Blvd,+St.+Louis,+MO+63108!3s0x87d8b4d4dfb1118d:0x46ba750d4f6e9fe1!4m2!1d-90.2595059!2d38.6515134">Google Maps search results</a> for “restaurants near LaunchCode”. There are two types of GIS data displayed here. The first is the base map, which contains roads, parks, municipality names, etc. This data is typically accessed via a WMS. The other data is the specific locations and names of restaurants. These are points (i.e their geometry is a single coordinate) and such data is typically accessed via a WFS.</p>
+<p class="first admonition-title"><i class="fas fa-binoculars" aria-hidden="true"></i>Example</p>
+<p class="last">Open the <a class="reference external" href="https://www.google.com/maps/search/restaurants/&#64;38.6565286,-90.3064753,13z/data=!3m1!4b1!4m8!2m7!3m6!1srestaurants!2sLaunchCode+Mentor+Center,+4811+Delmar+Blvd,+St.+Louis,+MO+63108!3s0x87d8b4d4dfb1118d:0x46ba750d4f6e9fe1!4m2!1d-90.2595059!2d38.6515134" target="_blank">Google Maps search results<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> for “restaurants near LaunchCode”. There are two types of GIS data displayed here. The first is the base map, which contains roads, parks, municipality names, etc. This data is typically accessed via a WMS. The other data is the specific locations and names of restaurants. These are points (i.e their geometry is a single coordinate) and such data is typically accessed via a WFS.</p>
 </div>
 </div>
 <div class="section" id="coordinate-systems">
 <h2>Coordinate Systems<a class="headerlink" href="#coordinate-systems" title="Permalink to this headline">¶</a></h2>
 <p>The Earth is not flat, yet maps typically are. This seemingly obvious statement has significant consequences to how we represent geospatial data. In particular, every piece of GIS data that we will interact with will have an associated <strong>coordinate system</strong>.</p>
 <p>While this may sound like a new concept, you already know of one coordinate system, that defined by latitude and longitude.</p>
-<p>Hop on over to Wikipedia and read the introductions to the articles on <a class="reference external" href="https://en.wikipedia.org/wiki/Latitude">latitude</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Longitude">longitude</a>.</p>
+<p>Hop on over to Wikipedia and read the introductions to the articles on <a class="reference external" href="https://en.wikipedia.org/wiki/Latitude" target="_blank">latitude<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Longitude" target="_blank">longitude<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>Now, find one example of a city with each of:</p>
 <ul class="simple">
 <li>both latitude and longitude postive</li>
@@ -242,17 +184,17 @@
 <li>negative latitude, positive longitude</li>
 <li>both latitude and longitude negative</li>
 </ul>
-<p>Another commonly-used coordinate system is <strong>Universal Transverse Mercator (UTM)</strong>. Read the introduction to the <a class="reference external" href="http://wiki.gis.com/wiki/index.php?title=Universal_Transverse_Mercator&amp;redirect=no">Wikipedia article on UTM</a>, along with the section titled, <a class="reference external" href="http://wiki.gis.com/wiki/index.php?title=Universal_Transverse_Mercator&amp;redirect=no#Locating_a_position_using_UTM_coordinates">“Locating a position using UTM coordinates”</a>.</p>
+<p>Another commonly-used coordinate system is <strong>Universal Transverse Mercator (UTM)</strong>. Read the introduction to the <a class="reference external" href="http://wiki.gis.com/wiki/index.php?title=Universal_Transverse_Mercator&amp;redirect=no" target="_blank">Wikipedia article on UTM<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, along with the section titled, <a class="reference external" href="http://wiki.gis.com/wiki/index.php?title=Universal_Transverse_Mercator&amp;redirect=no#Locating_a_position_using_UTM_coordinates" target="_blank">“Locating a position using UTM coordinates”<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <ul class="simple">
 <li>What are the three pieces of information needed to specify a location using UTM cooridnates?</li>
 <li>What are the coordinates of St. Louis in latitude/longitude? UTM? Use Google to find these.</li>
 </ul>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
 <p class="last">St. Louis is not a point, of course. It’s geometry is more properly a polygon. So when we talk about the “coordinates of St. Louis” we mean a point within the city limits.</p>
 </div>
 <p>In the world of GIS, coordinate systems are often called <strong>spatial reference systems (SRS)</strong>. More specifically, an SRS is a coordinate system that has been formally defined and catalogued for use by GIS analysts.</p>
-<p>The <a class="reference external" href="http://epsg.io/">EPSG registry</a> is a public database of all spatial reference systems. In this database, coordinate systems are referred to using their <strong>spatial reference identifier</strong>, which looks something like “EPSG:4326” (sometimes the “EPSG” portion is omitted).</p>
+<p>The <a class="reference external" href="http://epsg.io/" target="_blank">EPSG registry<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> is a public database of all spatial reference systems. In this database, coordinate systems are referred to using their <strong>spatial reference identifier</strong>, which looks something like “EPSG:4326” (sometimes the “EPSG” portion is omitted).</p>
 <p>Visit the EPSG registry, and search for “4326.”</p>
 <ul class="simple">
 <li>What is the name of this SRS?</li>

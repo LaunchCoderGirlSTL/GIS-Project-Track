@@ -7,12 +7,13 @@
     <title>Publishing Data In GeoServer &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
           GIS Project Track</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -55,92 +56,32 @@
      href="../index.html">Pages <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
-</ul>
-</li>
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="js-in-the-browser.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
-</ul>
-</li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#web-services">Web Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing Data In GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#obtaining-the-data">Obtaining the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-a-data-store">Creating a Data Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#publishing-a-layer">Publishing a Layer</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
-</ul>
-</li>
-</ul>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a></li>
+<li class="toctree-l1"><a class="reference internal" href="js-in-the-browser.html">JavaScript In The Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a></li>
+</ol>
+<ol class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Publishing Data In GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
+</ol>
 </ul>
 </li>
               
@@ -155,7 +96,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -197,8 +139,8 @@
 <span id="id1"></span><h1>Publishing Data In GeoServer<a class="headerlink" href="#publishing-data-in-geoserver" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="obtaining-the-data">
 <h2>Obtaining the Data<a class="headerlink" href="#obtaining-the-data" title="Permalink to this headline">¶</a></h2>
-<p>Visit the <a class="reference external" href="https://www.stlouis-mo.gov/data/">City of St.&nbsp;Louis Open
-Data</a> project page and navigate to
+<p>Visit the <a class="reference external" href="https://www.stlouis-mo.gov/data/" target="_blank">City of St.&nbsp;Louis Open
+Data<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> project page and navigate to
 the “Urban Development” section. Once there, look for “Park Data” and
 click through. From this page, download the “Parks Shapefile.” The
 download is a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> file which contains the <code class="docutils literal notranslate"><span class="pre">.shp</span></code> file along with
@@ -276,7 +218,7 @@ Archive:  parks.zip
 <div class="section" id="creating-a-data-store">
 <h2>Creating a Data Store<a class="headerlink" href="#creating-a-data-store" title="Permalink to this headline">¶</a></h2>
 <p>Log into the GeoServer admin portal by visiting
-<a class="reference external" href="http://localhost:8080/geoserver/">http://localhost:8080/geoserver/</a> in your browser and entering the
+<a class="reference external" href="http://localhost:8080/geoserver/" target="_blank">http://localhost:8080/geoserver/<i class="fas fa-external-link-alt" aria-hidden="true"></i></a> in your browser and entering the
 credentials admin/geoserver.</p>
 <div class="section" id="creating-a-workspace">
 <h3>Creating a Workspace<a class="headerlink" href="#creating-a-workspace" title="Permalink to this headline">¶</a></h3>
@@ -326,8 +268,8 @@ GeoServer.</p>
 <div class="section" id="adding-a-new-srs">
 <h3>Adding a New SRS<a class="headerlink" href="#adding-a-new-srs" title="Permalink to this headline">¶</a></h3>
 <p>We will add a new SRS definition to GeoServer following the
-<a class="reference external" href="http://docs.geoserver.org/stable/en/user/configuration/crshandling/customcrs.html">instructions in the GeoServer
-documentation</a>.</p>
+<a class="reference external" href="http://docs.geoserver.org/stable/en/user/configuration/crshandling/customcrs.html" target="_blank">instructions in the GeoServer
+documentation<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 <p>If you don’t have a terminal open and logged in to your GeoServer VM, do
 so now:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ ssh -p 2020 training@localhost
@@ -348,7 +290,7 @@ so now:</p>
 </div>
 <p>Use the down arrow key to navigate to the end of the file. We’ll add the
 new SRS definition here. We need to grab the SRS defintion, so let’s
-head over to <a class="reference external" href="http://epsg.io/">epsg.io</a>, a site that is a reference
+head over to <a class="reference external" href="http://epsg.io/" target="_blank">epsg.io<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>, a site that is a reference
 for coordinate system definitions.</p>
 <p>Search for “1983 missouri 2401” and the first result you see should be
 the coordinate system we’re looking for, “NAD 1983 StatePlane Missouri

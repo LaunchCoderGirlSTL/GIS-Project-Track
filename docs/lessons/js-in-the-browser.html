@@ -7,12 +7,13 @@
     <title>JavaScript In The Browser &#8212; CoderGirl GIS Project Track  documentation</title>
     <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/css/launchcode.css" type="text/css" />
-    <link rel="stylesheet" href="https://djwbyvgln9kts.cloudfront.net/launch_ed_style/custom.css" type="text/css" />
-    <script type="text/javascript" src="../_static/documentation_options.js"></script>
+    <link rel="stylesheet" type="text/css" href="../_static/fa/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/launchcode.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-logo.svg" alt="LaunchCode logo"></span>
+        <a class="navbar-brand" href="../index.html"><span><img src="../_static/lc-ed-logo.png" alt="LaunchCode logo"></span>
           GIS Project Track</a>
         <span class="navbar-text navbar-version pull-left"><b></b></span>
       </div>
@@ -55,92 +56,32 @@
      href="../index.html">Pages <b class="caret"></b></a>
   <ul class="dropdown-menu globaltoc"
       role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#system-requirements">System Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../setup.html#software">Software</a></li>
-</ul>
-</li>
+      aria-labelledby="dLabelGlobalToc"><ol>
+<li class="toctree-l1"><a class="reference internal" href="../setup.html">Setup</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../prerequisites.html">Prerequisites</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#html-and-css-review">HTML and CSS Review</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-javascript.html#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">JavaScript In The Browser</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#lesson">Lesson</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#practice">Practice</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#learning-objectives">Learning Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#studio-cities">Studio: Cities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="working-with-json.html#resources">Resources</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#getting-ready">Getting Ready</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-openlayers.html#openlayers-workshop">OpenLayers Workshop</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#web-services">Web Services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#wms-and-wfs">WMS and WFS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro-to-geoserver.html#coordinate-systems">Coordinate Systems</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geoserver-setup.html#geoserver-openlayers-tutorial-overview">GeoServer + OpenLayers Tutorial Overview</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#obtaining-the-data">Obtaining the Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#creating-a-data-store">Creating a Data Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="publishing-data-in-geoserver.html#publishing-a-layer">Publishing a Layer</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#adding-a-base-map">Adding a Base Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#enabling-cors-in-geoserver">Enabling CORS in GeoServer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#fetching-parks-data">Fetching Parks Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#styling-features">Styling Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rendering-data-in-openlayers.html#making-it-interactive">Making It Interactive</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#adding-controls">Adding Controls</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#publishing-additional-layers">Publishing Additional Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="extending-your-app.html#creating-yet-another-application">Creating Yet Another Application</a></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#what-is-the-command-line">What Is The Command Line?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#mac-the-terminal-app">Mac: The Terminal App</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/command-line.html#windows-command-prompt">Windows: Command Prompt</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../appendices/git.html#learning-git">Learning Git</a></li>
-</ul>
-</li>
-</ul>
+</ol>
+<ol class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro-to-javascript.html">Introduction to JavaScript</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">JavaScript In The Browser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working-with-json.html">Working With JSON</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-openlayers.html">Introduction to OpenLayers</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="intro-to-geoserver.html">Introduction to GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="geoserver-setup.html">GeoServer Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publishing-data-in-geoserver.html">Publishing Data In GeoServer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rendering-data-in-openlayers.html">Rendering Data In OpenLayers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending-your-app.html">Extending Your Application</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/command-line.html">Appendix: The Command Line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/git.html">Appendix: Git and GitHub</a></li>
+</ol>
+<ol>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About This Curriculum</a></li>
+</ol>
 </ul>
 </li>
               
@@ -155,7 +96,8 @@
             
 <form class="navbar-form navbar-right" action="../search.html" method="get">
  <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
+    <label for="q" class="searchLabel">Search</label>
+    <input type="text" name="q" class="form-control" />
  </div>
   <input type="hidden" name="check_keywords" value="yes" />
   <input type="hidden" name="area" value="default" />
@@ -197,14 +139,14 @@
 <div class="section" id="lesson">
 <h2>Lesson<a class="headerlink" href="#lesson" title="Permalink to this headline">¶</a></h2>
 <p>In class, we’ll discuss the DOM at a high level. We’ll also demonstrate how to use Firefox’s Developer Tools to interact with the DOM.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you are familiar with the Developer Tools of another browser (e.g. Chrome) then feel free to use that browser and it’s tools. If you are completely new to JS and Developer Tools, we recommend installing <a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/?icn=tabz">Firefox</a>.</p>
+<div class="admonition">
+<p class="first admonition-title"><i class="fas fa-sticky-note" aria-hidden="true"></i>Note</p>
+<p class="last">If you are familiar with the Developer Tools of another browser (e.g. Chrome) then feel free to use that browser and it’s tools. If you are completely new to JS and Developer Tools, we recommend installing <a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/?icn=tabz" target="_blank">Firefox<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
 </div>
 <div class="section" id="practice">
 <h2>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h2>
-<p>To dig in deeper in learning about the DOM and events, complete this short course on Stepik: <a class="reference external" href="https://stepik.org/course/18644/syllabus">The Document Object Model</a>.</p>
+<p>To dig in deeper in learning about the DOM and events, complete this short course on Stepik: <a class="reference external" href="https://stepik.org/course/18644/syllabus" target="_blank">The Document Object Model<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>.</p>
 </div>
 </div>
 
